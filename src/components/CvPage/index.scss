@@ -1,0 +1,254 @@
+.animate__fadeInUp {
+    overflow: hidden;
+}
+
+.cv {
+    // margin-left: calc(37%);
+    // width: 65%;
+    display: block;
+    position: relative;
+
+    .line {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        // z-index: -1;
+    }
+
+    .seperater {
+        width: 100%;
+        font-size: 27px;
+        text-align: center;
+        font-weight: bolder;
+        padding-top: 20px;
+        padding-bottom: 0;
+        color: orange;
+    }
+
+    .download-cv {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+        margin-bottom: 20px;
+
+        button {
+            height: 50px;
+            width: 280px;
+            font-size: larger;
+            font-weight: bolder;
+            border-radius: 20px;
+            border-style: none;
+            background-color: #efd96f;
+            font-size: medium;
+            box-shadow: 3px 2px 0 0 #d8d8d8;
+
+            &:hover {
+                background-color: #589da4;
+                color: white;
+                box-shadow: 1px 1px 0 0 #c0b5b9;
+            }
+        }
+    }
+
+    .name-explanation {
+        cursor: pointer;
+        text-decoration: underline;
+        font-weight: bolder;
+
+        img {
+            height: 15px;
+            width: auto;
+        }
+
+        &:hover {
+            color: darkblue;
+        }
+    }
+
+    .work {
+        // background-color: aqua;
+        // position: relative;
+        display: flex;
+        animation: fadeInUp 0.5s;
+
+        .job-title {
+            position: sticky;
+            top: 100px;
+            width: 300px;
+            height: 100px;
+            display: flex;
+
+            p {
+                font-size: larger;
+                font-style: normal;
+                text-align: right;
+                width: 220px;
+                font-weight: bold;
+
+                span {
+                    line-height: 20px;
+                    font-weight: lighter;
+                    font-size: 15px;
+                    color: gray;
+                    // font-style: italic;
+                }
+            }
+
+            .spot {
+                width: 40px;
+                height: 40px;
+                margin: 20px 10px 0px auto;
+            }
+        }
+
+        ul {
+            // list-style: none;
+            line-height: 27px;
+            font-size: medium;
+            font-style: italic;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 30px;
+            margin-right: 20px;
+            width: 550px;
+            color: darkgray;
+
+            li {
+                margin-right: 20px;
+                margin-bottom: 20px;
+                transition: padding 0.5s;
+
+                .language {
+                    font-weight: bold;
+                    color: goldenrod;
+                }
+
+                .skill {
+                    font-weight: bold;
+                    color: #122c6f;
+                }
+
+                &:hover {
+                    color: black;
+                    font-weight: bold;
+                    font-size: larger;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .ocha {
+        // background-color: rosybrown;
+        display: flex;
+        animation: fadeInUp 0.8s;
+
+        .school-name {
+            position: sticky;
+            top: 100px;
+            width: 300px;
+            height: 100px;
+            display: flex;
+
+            p {
+                font-size: larger;
+                font-style: normal;
+                text-align: right;
+                width: 220px;
+                font-weight: bold;
+
+                span {
+                    line-height: 20px;
+                    font-size: medium;
+                    font-weight: lighter;
+                    color: gray;
+                }
+            }
+
+            .spot {
+                width: 40px;
+                height: 40px;
+                margin: 20px 10px 0px auto;
+                // bottom: 100px;
+            }
+        }
+
+        .development-language {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 20px;
+            margin-right: 20px;
+            width: 550px;
+            display: flex;
+            height: auto;
+            flex-wrap: wrap;
+
+            li {
+                margin-right: 20px;
+                margin-bottom: 20px;
+                padding: 10px 2px;
+                width: 140px;
+                border-radius: 18px;
+                color: white;
+                text-align: center;
+                white-space: nowrap;
+                font-size: large;
+
+                &:hover {
+                    box-shadow: 2px 3px 0 0 #c0b5b9;
+                }
+            }
+
+            .language-label {
+                background-color: #8ca8be;
+            }
+
+            .tools {
+                background-color: #D7BCBB;
+            }
+
+            .apps {
+                background-color: #E7CD97;
+            }
+
+            .database {
+                background-color: #6E8F8D;
+                ;
+            }
+
+            .platform {
+                background-color: #709ED0;
+            }
+
+            .others {
+                background-color: #9E927E;
+                ;
+            }
+        }
+
+        .ul-normal {
+            line-height: 27px;
+            font-size: medium;
+            font-style: italic;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 20px;
+            margin-right: 20px;
+            width: 550px;
+            color: darkgray;
+
+            li {
+                margin-right: 20px;
+                margin-bottom: 20px;
+                transition: padding 0.5s;
+
+                &:hover {
+                    color: black;
+                    font-weight: bold;
+                    font-size: larger;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+}

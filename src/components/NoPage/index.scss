@@ -1,0 +1,12 @@
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInUp 0.5s;
+    height: 100vh;// 表示这个标签的高度与视窗高度的比例是100%
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}

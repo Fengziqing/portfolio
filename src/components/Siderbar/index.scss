@@ -1,0 +1,99 @@
+.personal-message-container {
+    background-color: #cbd690;
+    border-top-right-radius: 30px;
+    position: fixed;
+    display: block;
+    margin: 0;
+    padding: 37px;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+
+    nav {
+        background-color: #665048;
+        border-radius: 30px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        overflow: clip;
+        justify-content: center;
+        font-weight: bold;
+        opacity: 80%;
+        box-shadow: 3px 5px 0 0 #d6ae7e;
+        animation: fadeInUp 0.5s;
+
+        a{
+            list-style-type: none;
+            margin: 20px;
+            padding: 0px 10px 0px 10px;
+            border-radius: 20px;
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+
+            &:hover {
+                color: #f0f5e2;
+                opacity: 70%;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        a.active {
+            font-weight: bold;
+            color: #FFE071;
+            width: auto;
+        }
+
+    }
+
+    img {
+        margin-top: 50px;
+        margin-left: 20px;
+        width: 180px;
+        height: 180px;
+        justify-content: left;
+        animation: fadeInUp 0.7s;
+    }
+
+    .my-name {
+        color: #f2ca48;
+        text-shadow: 2px 3px 0 #4c484f;
+        margin-left: 10px;
+        animation: fadeInUp 1s;
+
+        span {
+            margin-left: 10px;
+            font-size: small;
+            font-weight: 100;
+            text-shadow: none;
+            color: #4c484f;
+        }
+    }
+
+    ul.self-introduction {
+        color: #4c484f;
+        font-style:italic;
+        margin-left: 20px;
+        padding: 0;
+        display: block;
+        animation: fadeInUp 1.2s;
+
+        li {
+            margin-bottom: 13px;
+        }
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        animation: fadeInUp 1.5s;
+
+        input {
+            cursor: pointer;
+            margin-right: 40px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
