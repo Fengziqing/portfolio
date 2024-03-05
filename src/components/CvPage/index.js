@@ -10,11 +10,11 @@ const Cv = () => {
 
     function downloadCV(e){
         e.preventDefault();
-        const downloadLink = document.createElement('a');
-        downloadLink.style = "display:none";
-        downloadLink.href = 'src/assets/resume.pdf';
-        downloadLink.download = 'ZiQing_FengResume.pdf';
-        downloadLink.click();
+        // const downloadLink = document.createElement('a');
+        // downloadLink.style = "display:none";
+        // downloadLink.href = 'src/assets/resume.pdf';
+        // downloadLink.download = 'ZiQing_FengResume.pdf';
+        // downloadLink.click();
     }
 
     return (
