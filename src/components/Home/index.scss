@@ -15,55 +15,69 @@
         grid-column: 1/4;
         grid-row: 2;
     }
-    .two{
+
+    .two {
         grid-column: 5/8;
         grid-row: 2;
     }
-    .three{
+
+    .three {
         grid-column: 1/4;
         grid-row: 3/6;
     }
-    .four{
+
+    .four {
         grid-column: 5/6;
         grid-row: 3/4;
-        .squar{
+
+        .squar {
             background-color: #e8e9d5;
         }
     }
-    .five{
+
+    .five {
         grid-column: 7/8;
         grid-row: 3/4;
-        .squar{
+
+        .squar {
             background-color: #9fb0cf;
         }
     }
-    .six{
+
+    .six {
         grid-column: 5/6;
         grid-row: 5/6;
-        .squar{
+
+        .squar {
             background-color: #d3dfde;
         }
     }
-    .seven{
+
+    .seven {
         grid-column: 1/4;
         grid-row: 7/8;
-        .location{
+
+        .location {
             border: 0;
             width: 600px;
             height: 450px;
         }
     }
-    .eight{
+
+    .eight {
         grid-column: 5/6;
         grid-row: 7/8;
-        .squar{
+
+        .squar {
             background-color: #e5e1bb;
         }
     }
-    .nine{
+
+    .nine {
         grid-column: 7/8;
         grid-row: 5/8;
-        .pic-vertical-rectangle{
+
+        .pic-vertical-rectangle {
             background-color: #b2bd8c;
         }
     }
@@ -78,73 +92,126 @@
     grid-template-rows: repeat(14, 100px);
     // animation: fadeInUp 0.5s;
 
-    .one{
+    .one {
         grid-column: 1/8;
         grid-row: 1;
     }
 
-    .two{
+    .two {
         grid-column: 1/2;
         grid-row: 2/3;
     }
 
-    .three{
+    .three {
         grid-column: 3/4;
         grid-row: 2/5;
     }
 
-    .four{
+    .four {
         grid-column: 5/8;
         grid-row: 2/5;
     }
-    
-    .five{
+
+    .five {
         grid-column: 1/2;
         grid-row: 4/7;
     }
 
-    .six{
-        grid-column: 3/6;//列
+    .six {
+        grid-column: 3/6; //列
         grid-row: 6/9;
     }
 
-    .seven{
+    .seven {
         grid-column: 7/8;
         grid-row: 6/7;
     }
 
-    .eight{
+    .eight {
         grid-column: 1/2;
         grid-row: 8/9;
     }
 
-    .nine{
+    .nine {
         grid-column: 1/4;
         grid-row: 10/11;
     }
 
-    .ten{
+    .ten {
         grid-column: 5/6;
         grid-row: 10/11;
     }
 
-    .eleven{
+    .eleven {
         grid-column: 7/8;
         grid-row: 8/11;
     }
 
-    .twelve{
+    .twelve {
         grid-column: 1/2/6;
         grid-row: 12/13;
     }
 
-    .thirteen{
+    .thirteen {
         grid-column: 3/6;
         grid-row: 12/13;
     }
 
-    .fourteen{
+    .fourteen {
         grid-column: 7/8;
         grid-row: 12/13;
+    }
+}
+
+//* HTML: <div class="loader"></div> */
+.loader {
+    width: 70px;
+    top: 50%;
+    right: 30%;
+    position: fixed;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #e5e1bb;
+    transform-origin: top;
+    // display: grid;
+    display: none;
+    animation: l3-0 1s infinite linear;
+}
+
+.loader::before,
+.loader::after {
+    content: "";
+    grid-area: 1/1;
+    background: #9fb0cf;
+    border-radius: 50%;
+    transform-origin: top;
+    animation: inherit;
+    animation-name: l3-1;
+}
+
+.loader::after {
+    background: #d3dfde;
+    --s: 180deg;
+}
+
+@keyframes l3-0 {
+
+    0%,
+    20% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes l3-1 {
+    50% {
+        transform: rotate(var(--s, 90deg))
+    }
+
+    100% {
+        transform: rotate(0)
     }
 }

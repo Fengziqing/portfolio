@@ -5,7 +5,16 @@ import linkedin_icon from '../../assets/linkedin.svg';
 import github_icon from '../../assets/github.svg';
 import { NavLink } from 'react-router-dom';
 
-const Sidebar = () => (
+const Sidebar = () => {
+    function clickToWriteEmail(link){
+        window.location.href=link;
+    }
+    function handleClick(link){
+        const newpage = window.open('about:blank');
+        newpage.location.href=link;
+    }
+
+    return (
         <div className="personal-message-container">
             <nav>
                 <NavLink 
@@ -28,11 +37,12 @@ const Sidebar = () => (
                 <li>Language: Japanese, English, Chinese</li>
             </ul>
             <div className="contact">
-                <input type="image" src={email_icon} alt="email" onclick="window.location.href='mailto:fengziqing970202@gmail.com'"></input>
-                <input type="image" src={linkedin_icon} alt="linkedin" onclick="window.location.href='http://www.linkedin.com/in/ziqing-feng'"></input>
-                <input type="image" src={github_icon} alt="github" onclick="window.location.href='https://github.com/Fengziqing'"></input>
+                <input type="image" src={email_icon} alt="email" onClick={()=>clickToWriteEmail("mailto:fengziqing970202@gmail.com")}></input>
+                <input type="image" src={linkedin_icon} alt="linkedin" onClick={()=>handleClick("http://www.linkedin.com/in/ziqing-feng")}></input>
+                <input type="image" src={github_icon} alt="github" onClick={()=>handleClick("https://github.com/Fengziqing")}></input>
             </div>
         </div>
-)
+    )
+}
 
 export default Sidebar
