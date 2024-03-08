@@ -175,7 +175,8 @@
     transform-origin: top;
     // display: grid;
     display: none;
-    animation: l3-0 1s infinite linear;
+    animation: fadeOut 1s 1s;
+    animation-fill-mode: forwards;
 }
 
 .loader::before,

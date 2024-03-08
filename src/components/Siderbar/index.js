@@ -4,6 +4,7 @@ import email_icon from '../../assets/email.svg';
 import linkedin_icon from '../../assets/linkedin.svg';
 import github_icon from '../../assets/github.svg';
 import { NavLink } from 'react-router-dom';
+import biglogo from '../../assets/biglogo.png';
 
 const Sidebar = () => {
     function clickToWriteEmail(link){
@@ -16,6 +17,7 @@ const Sidebar = () => {
 
     return (
         <div className="personal-message-container">
+            <img className="logo" src={biglogo} alt='haruko'></img>
             <nav>
                 <NavLink 
                     exact="true" 
@@ -28,9 +30,9 @@ const Sidebar = () => {
                     activeclassname="active" 
                     to="/contact">Contact Me</NavLink>
             </nav>
-            <img className={avatar} src={avatar} alt="avatar"/>
+            <img className="avatar" src={avatar} alt="avatar"/>
             <h1 className="my-name">Haruko Feng<span>ZiQing Feng(27)</span></h1>
-            <ul className="self-introduction">
+            <ul>
                 <li>Software Engineer, Client Engineer</li>
                 <li>Computer Science Master</li>
                 <li>Live in China</li>

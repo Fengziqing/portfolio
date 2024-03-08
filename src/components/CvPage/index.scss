@@ -157,6 +157,7 @@
                 text-align: right;
                 width: 220px;
                 font-weight: bold;
+                margin-right: 10px;
 
                 span {
                     line-height: 20px;
@@ -251,4 +252,8 @@
             }
         }
     }
+}
+
+@media screen and (max-width:1230px){
+
 }

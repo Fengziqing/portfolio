@@ -9,6 +9,9 @@
     height: 100%;
     justify-content: center;
 
+    .logo{
+        display: none;
+    }
     nav {
         background-color: #665048;
         border-radius: 30px;
@@ -22,7 +25,7 @@
         box-shadow: 3px 5px 0 0 #d6ae7e;
         animation: fadeInUp 0.5s;
 
-        a{
+        a {
             list-style-type: none;
             margin: 20px;
             padding: 0px 10px 0px 10px;
@@ -46,7 +49,7 @@
 
     }
 
-    img {
+    .avatar {
         margin-top: 50px;
         margin-left: 20px;
         width: 180px;
@@ -70,9 +73,9 @@
         }
     }
 
-    ul.self-introduction {
+    ul {
         color: #4c484f;
-        font-style:italic;
+        font-style: italic;
         margin-left: 20px;
         padding: 0;
         display: block;
@@ -96,4 +99,43 @@
             height: 30px;
         }
     }
+}
+
+@media screen and (max-width: 1230px) {
+    .personal-message-container {
+        background-color: #cbd690;
+        border-radius: 30px;
+        position: fixed;
+        display: flex;
+        margin: 10px;
+        padding: 10px;
+        width: 100vh;
+        height: 5vh;
+        justify-content: center;
+
+        nav{
+            background:none;
+            box-shadow: none;
+            margin-right: 0;
+        }
+
+        .my-name{
+            display: none;
+        }
+
+        .logo{
+            display: flex;
+        }
+        .avatar{
+            display: none;
+        }
+
+        ul{
+            li{
+                display: none;
+
+            }
+        }
+    }
+
 }

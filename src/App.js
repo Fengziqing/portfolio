@@ -5,8 +5,13 @@ import Home from './components/Home';
 import Cv from './components/CvPage';
 import Contact from './components/Contact';
 import NoPage from './components/NoPage';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(()=>{
+    
+  },[]);
+  
   return (
     <>
     <Routes>

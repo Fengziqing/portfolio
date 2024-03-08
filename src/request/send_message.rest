@@ -1,0 +1,8 @@
+POST http://localhost:3001/api/contact 
+Content-Type: application/json
+
+{
+    "name": "ziqing feng",
+    "email": "982685807@qq.com",
+    "message":"hello! /n I am a test file content./n thank you/n haru/n"
+}

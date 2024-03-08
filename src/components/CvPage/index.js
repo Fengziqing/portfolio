@@ -19,7 +19,7 @@ const Cv = () => {
 
     return (
         <>
-            <div id="cvPage" className="cv">
+            <div className="cv">
                 <div className="download-cv">➡️ ➡️ ➡️ <button onClick={downloadCV}> Download CV</button> ⬅️ ⬅️ ⬅️</div>
                 <div className="seperater">Skills</div>
                 <div className="ocha">
