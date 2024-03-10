@@ -30,7 +30,7 @@
     "dev": "nodemon src/server/index.js"
   },
   "engines": {
-    "node": "14.x"
+    "node": "20.x"
   },
   "eslintConfig": {
     "extends": [
