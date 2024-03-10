@@ -29,6 +29,9 @@
     "server": "node src/server/index.js",
     "dev": "nodemon src/server/index.js"
   },
+  "engines": {
+    "node": "14.x"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
