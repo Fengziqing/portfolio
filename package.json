@@ -23,13 +23,16 @@
     "vercel": "^33.5.5",
     "web-vitals": "^2.1.4"
   },
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
-    "start": "node src/server/index.js",
+    "start": "node src/api/index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "node src/server/index.js",
-    "dev": "nodemon src/server/index.js",
+    "server": "node src/api/index.js",
+    "dev": "nodemon src/api/index.js",
     "vercel": "vercel dev"
   },
   "eslintConfig": {
