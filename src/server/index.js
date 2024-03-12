@@ -33,7 +33,7 @@ app.post('/api/contact', async (req, res) => {
     from: 'fengziqing970202@gmail.com',
     to: email,
     subject: '【HARUKO FENG】Thank you for reaching out!',
-    text: `Dear ${name},\n\nThank you for reaching out. I will get back to you as soon as possible.\n\nBest regards,\nZiQing Feng\n\n your mail content is \n ${message}\n`,
+    text: `Dear ${name},\n\nThank you for reaching out. I will get back to you as soon as possible.\n\nBest regards,\nZiQing Feng\n\n your mail content is \n-------------------------------\n ${message}\n${email}\n${name}`,
   };
 
   try {

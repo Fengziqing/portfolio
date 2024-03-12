@@ -67,7 +67,7 @@ const Cv = () => {
                         <img className="spot" src={spot} alt="spot" />
                     </div>
                     <ul className="ul-normal">
-                        <li>This Website: developed 100% by myself<br /> github: <span className="name-explanation" onClick={()=>handleClick("https://github.com/Fengziqing/profolio")}>https://github.com/Fengziqing/profolio</span></li>
+                        <li>This Website: developed 100% by myself<br /> github: <span className="name-explanation" onClick={()=>handleClick("https://github.com/Fengziqing/portfolio")}>https://github.com/Fengziqing/portfolio</span></li>
                     </ul>
                 </div>
                 <div className="work">
