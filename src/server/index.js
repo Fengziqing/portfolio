@@ -9,6 +9,7 @@ const port = process.env.SERVER_PORT;
 const MAIL_PASS = process.env.MAIL_PASS
 
 app.use(bodyParser.json());
+app.use(express.static('build'))
 app.use(cors());
 
 app.post('/api/contact', async (req, res) => {
