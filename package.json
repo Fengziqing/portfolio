@@ -27,12 +27,12 @@
     "node": "14.x"
   },
   "scripts": {
-    "start": "node src/api/index.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "node src/api/index.js",
-    "dev": "nodemon src/api/index.js",
+    "server": "node index.js",
+    "dev": "nodemon index.js",
     "vercel": "vercel dev"
   },
   "eslintConfig": {
