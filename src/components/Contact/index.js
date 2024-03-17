@@ -18,7 +18,8 @@ const Contact = () => {
         e.preventDefault();
         console.log(formData);
         const data = JSON.stringify(formData);
-        axios.post('http://localhost:3001/api/contact',data,{
+        axios.defaults.withCredentials = true;
+        axios.post('https://vercel-express-eosin.vercel.app/api/contact',data,{
             headers: {
               'Content-Type': 'application/json',
             }}
