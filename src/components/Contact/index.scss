@@ -41,12 +41,15 @@
 
         .name-error{
             color: #991b27;
+            text-align: left;
         }
         .email-error{
             color: #991b27;
+            text-align: left;
         }
         .message-error{
             color: #991b27;
+            text-align: left;
         }
 
         input {
@@ -110,63 +113,6 @@
                 opacity: 0.9;
                 box-shadow: 1px 2px 0 0 #ead8b1;
             }
-        }
-    }
-}
-:root{
-    --failed-color: #bf5c45;
-    --successed-color: #B6C796;
-    --failed-shadow: #d19d87;
-    --successed-shadow: #45958E;
-}
-.pop-up-window {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    // width: 300px;
-    height: 300px;
-    background-color: var(--failed-color);
-    // background-color: var(--successed-color);
-    text-align: center;
-    padding: 30px 40px;
-    border-radius: 30px;
-    box-shadow: 3px 5px 0 0 var(--failed-shadow);
-    // box-shadow: 2px 4px 0 0 var(--successed-shadow);
-
-    img{
-        background-color: var(--failed-color);
-        // background-color: var(--successed-color);
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
-        position:relative;
-        margin-top: -100px;
-    }
-    p{
-        margin-top: 0;
-        font-size: 30px;
-        color: white;
-        font-weight: bold;
-    }
-    button{
-        color: white;
-        font-weight: bold;
-        font-size: large;
-        width: 200px;
-        height: 50px;
-        text-align: center;
-        border-radius: 25px;
-        border: none;
-        margin-top: 30px;
-        background-color: #F7CB9A;
-        box-shadow: 2px 3px 0 0 #949883;
-
-        &:hover {
-            color: gray;
-            opacity: 0.9;
-            box-shadow: 1px 2px 0 0 darkgrey;
         }
     }
 }

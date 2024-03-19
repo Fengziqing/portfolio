@@ -1,0 +1,67 @@
+:root{
+    --failed-color: #B63231;
+    --failed-shadow: #E1B1AB;
+    --ok-button-color: #4FB19D;
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+}
+.pop-up-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: var(--failed-color);
+    text-align: center;
+    padding: 30px 40px;
+    border-radius: 30px;
+    box-shadow: 3px 5px 0 0 var(--failed-shadow);
+    animation: fadein 0.5s;
+
+    img{
+        background-color: var(--failed-color);
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        position:relative;
+        margin-top: -100px;
+    }  
+    p{
+        text-align: left;
+        margin-top: 0;
+        font-size: 20px;
+        color: white;
+        font-weight: normal;
+
+        span{
+            font-weight: bold;
+        }
+    }
+    
+    button{
+        color: white;
+        font-weight: bold;
+        font-size: large;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        border-radius: 25px;
+        border: none;
+        margin-top: 30px;
+        background-color: var(--ok-button-color);
+        box-shadow: 2px 3px 0 0 var(--failed-shadow);
+    
+        &:hover {
+            color: black;
+            opacity: 0.9;
+            box-shadow: 1px 2px 0 0 darkgrey;
+        }
+    }
+}
