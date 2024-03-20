@@ -59,8 +59,10 @@ const Contact = () => {
         }
         ).then(response => {
             setSendOk(true);
+            //clean input 
+            //add blur
         }).catch(error=>{
-            setSendFailed(true);
+            setSendFailed(true)
             console.log(error);
         });
     }
