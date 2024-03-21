@@ -8,9 +8,22 @@
 
 @media screen and (max-width: 1230px) {
     .base{
-        display: block;
+        justify-content: center;
+
+        .container{
+            margin: 0;
+            margin-left: 15px;
+            margin-top: 60px;
+        }
     }
-    .container{
-        margin: 0;
+}
+
+@media screen and (max-width: 850px) {
+    .base{
+        justify-content: center;
+        .container{
+            width: 100%;
+            margin-right: 15px;
+        }
     }
 }
