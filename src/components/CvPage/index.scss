@@ -4,7 +4,7 @@
 
 .cv {
     // margin-left: calc(37%);
-    // width: 65%;
+    // width: 95%;
     display: block;
     position: relative;
 
@@ -66,79 +66,6 @@
         }
     }
 
-    .work {
-        // background-color: aqua;
-        // position: relative;
-        display: flex;
-        animation: fadeInUp 0.5s;
-
-        .job-title {
-            position: sticky;
-            top: 100px;
-            width: 300px;
-            height: 100px;
-            display: flex;
-
-            p {
-                font-size: larger;
-                font-style: normal;
-                text-align: right;
-                width: 220px;
-                font-weight: bold;
-
-                span {
-                    line-height: 20px;
-                    font-weight: lighter;
-                    font-size: 15px;
-                    color: gray;
-                    // font-style: italic;
-                }
-            }
-
-            .spot {
-                width: 40px;
-                height: 40px;
-                margin: 20px 10px 0px auto;
-            }
-        }
-
-        ul {
-            // list-style: none;
-            line-height: 27px;
-            font-size: medium;
-            font-style: italic;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            margin-top: 30px;
-            margin-right: 20px;
-            width: 550px;
-            color: darkgray;
-
-            li {
-                margin-right: 20px;
-                margin-bottom: 20px;
-                transition: padding 0.5s;
-
-                .language {
-                    font-weight: bold;
-                    color: goldenrod;
-                }
-
-                .skill {
-                    font-weight: bold;
-                    color: #122c6f;
-                }
-
-                &:hover {
-                    color: black;
-                    font-weight: bold;
-                    font-size: larger;
-                    padding-top: 20px;
-                    padding-bottom: 20px;
-                }
-            }
-        }
-    }
-
     .ocha {
         // background-color: rosybrown;
         display: flex;
@@ -147,17 +74,16 @@
         .school-name {
             position: sticky;
             top: 100px;
-            width: 300px;
+            width: 250px;
             height: 100px;
             display: flex;
 
             p {
                 font-size: larger;
                 font-style: normal;
-                text-align: right;
-                width: 220px;
+                text-align: left;
+                // width: 200px;
                 font-weight: bold;
-                margin-right: 10px;
 
                 span {
                     line-height: 20px;

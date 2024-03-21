@@ -70,8 +70,8 @@ const Cv = () => {
                         <li>This Website: developed 100% by myself<br /> github: <span className="name-explanation" onClick={()=>handleClick("https://github.com/Fengziqing/portfolio")}>https://github.com/Fengziqing/portfolio</span></li>
                     </ul>
                 </div>
-                <div className="work">
-                    <div className="job-title">
+                <div className="ocha">
+                    <div className="school-name">
                         <p>Client Engineer<br /> <span className="name-explanation"
                             onClick={()=>handleClick("https://zoom.us/")}>ZOOM <img
                                 src={link} alt="" /></span> <br /><span> HangZhou, China <br />2022 - 2023</span></p>
