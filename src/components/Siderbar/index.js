@@ -5,6 +5,7 @@ import linkedin_icon from '../../assets/linkedin.svg';
 import github_icon from '../../assets/github.svg';
 import { NavLink } from 'react-router-dom';
 import biglogo from '../../assets/biglogo.png';
+import smalllogo from '../../assets/smalllogo.png';
 
 const Sidebar = () => {
     function handleClick(link) {
@@ -14,7 +15,8 @@ const Sidebar = () => {
 
     return (
         <div className="personal-message-container">
-            <img className="logo" src={biglogo} alt='haruko'></img>
+            <img className="biglogo" src={biglogo} alt='haruko'></img>
+            <img className="smalllogo" src={smalllogo} alt='small-H'></img>
             <nav>
                 <NavLink
                     exact="true"

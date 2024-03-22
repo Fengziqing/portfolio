@@ -28,7 +28,7 @@
     background: #dfc0c2;
     border-radius: var(--radius);
     cursor: pointer;
-    transition:all 0.2s;
+    transition: all 0.2s;
     box-shadow: 2px 3px 0 0 #cb98a1;
     overflow: hidden;
 
@@ -74,7 +74,7 @@
     }
 }
 
-.squar{
+.squar {
     margin: var(--margin);
     width: var(--small-width);
     height: var(--small-heigh);
@@ -85,7 +85,7 @@
     display: block;
     position: relative;
 
-    .img-background-color{
+    .img-background-color {
         position: absolute;
         z-index: 1;
         top: 5px;
@@ -104,7 +104,8 @@
         height: auto;
         width: 100%;
     }
-    p{
+
+    p {
         position: relative;
         z-index: 1;
         color: #565656;
@@ -118,7 +119,7 @@
     }
 }
 
-.pic-horizontal-rectangle{
+.pic-horizontal-rectangle {
     margin: var(--margin);
     width: var(--large-width);
     height: var(--small-heigh);
@@ -133,7 +134,7 @@
     }
 }
 
-.pic-vertical-rectangle{
+.pic-vertical-rectangle {
     margin: var(--margin);
     width: var(--small-width);
     height: var(--large-heigh);
@@ -144,7 +145,7 @@
     text-align: center;
     position: relative;
 
-    .img-background-color{
+    .img-background-color {
         position: absolute;
         z-index: 0;
         top: 5px;
@@ -163,7 +164,7 @@
         z-index: 1;
     }
 
-    p{
+    p {
         z-index: 1;
         position: relative;
         border-radius: var(--radius);
@@ -175,7 +176,7 @@
     }
 }
 
-.click-horizontal-rectangle{
+.click-horizontal-rectangle {
     margin: var(--margin);
     width: var(--large-width);
     height: var(--small-heigh);

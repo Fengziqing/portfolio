@@ -1,3 +1,4 @@
+@import '../../App.scss';
 .base{
     display: flex;
     .container {
@@ -6,7 +7,7 @@
     }
 }
 
-@media screen and (max-width: 1230px) {
+@media screen and (max-width: $big-screen-width) and (min-width: $middle-screen-width){
     .base{
         justify-content: center;
 
@@ -18,11 +19,13 @@
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: $middle-screen-width) {
     .base{
         justify-content: center;
         .container{
             width: 100%;
+            margin-left: 15px;
+            margin-top: 60px;
             margin-right: 15px;
         }
     }

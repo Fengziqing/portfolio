@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 .animate__fadeInUp {
     overflow: hidden;
 }
@@ -163,56 +165,88 @@
     }
 }
 
-//* HTML: <div class="loader"></div> */
-.loader {
-    width: 70px;
-    top: 50%;
-    right: 30%;
-    position: fixed;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    background: #e5e1bb;
-    transform-origin: top;
-    // display: grid;
-    display: none;
-    animation: fadeOut 1s 1s;
-    animation-fill-mode: forwards;
-}
+@media screen and (max-width:$middle-screen-width) {
+    .my-first-container {
+        grid-template-columns: repeat(4, 100px);
+        grid-gap: 8px;
+        grid-template-rows: repeat(16, 100px);
 
-.loader::before,
-.loader::after {
-    content: "";
-    grid-area: 1/1;
-    background: #9fb0cf;
-    border-radius: 50%;
-    transform-origin: top;
-    animation: inherit;
-    animation-name: l3-1;
-}
+        .one {
+            grid-column: 1/4;
+            grid-row: 2;
+        }
 
-.loader::after {
-    background: #d3dfde;
-    --s: 180deg;
-}
+        .two {
+            grid-column: 5/8;
+            grid-row: 2;
+        }
 
-@keyframes l3-0 {
+        .three {
+            grid-column: 1/4;
+            grid-row: 3/6;
+        }
 
-    0%,
-    20% {
-        transform: rotate(0)
+        .four {
+            grid-column: 5/6;
+            grid-row: 3/4;
+
+            .squar {
+                background-color: #e8e9d5;
+            }
+        }
+
+        .five {
+            grid-column: 7/8;
+            grid-row: 3/4;
+
+            .squar {
+                background-color: #9fb0cf;
+            }
+        }
+
+        .six {
+            grid-column: 5/6;
+            grid-row: 5/6;
+
+            .squar {
+                background-color: #d3dfde;
+            }
+        }
+
+        .seven {
+            grid-column: 1/4;
+            grid-row: 7/8;
+
+            .location {
+                border: 0;
+                width: 600px;
+                height: 450px;
+            }
+        }
+
+        .eight {
+            grid-column: 5/6;
+            grid-row: 7/8;
+
+            .squar {
+                background-color: #e5e1bb;
+            }
+        }
+
+        .nine {
+            grid-column: 7/8;
+            grid-row: 5/8;
+
+            .pic-vertical-rectangle {
+                background-color: #b2bd8c;
+            }
+        }
     }
 
-    100% {
-        transform: rotate(360deg)
-    }
-}
-
-@keyframes l3-1 {
-    50% {
-        transform: rotate(var(--s, 90deg))
+    .my-second-container {
+        grid-template-columns: repeat(4, 100px);
+        grid-gap: 8px;
+        grid-template-rows: repeat(16, 100px);
     }
 
-    100% {
-        transform: rotate(0)
-    }
 }
