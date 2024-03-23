@@ -4,14 +4,22 @@
     overflow: hidden;
 }
 
+.information-area {
+    display: none;
+}
+
 .my-first-container {
-    width: 50%;
     padding: 0px;
     display: grid;
     grid-template-columns: repeat(8, 100px);
     grid-gap: 8px;
     grid-template-rows: repeat(8, 100px);
     animation: fadeInUp 0.5s;
+
+    .bento-title {
+        grid-column: 1/8;
+        grid-row: 1;
+    }
 
     .one {
         grid-column: 1/4;
@@ -86,15 +94,14 @@
 }
 
 .my-second-container {
-    width: 50%;
     padding: 0px;
     display: grid;
     grid-template-columns: repeat(8, 100px);
     grid-gap: 8px;
-    grid-template-rows: repeat(14, 100px);
+    grid-template-rows: repeat(13, 100px);
     // animation: fadeInUp 0.5s;
 
-    .one {
+    .bento-title {
         grid-column: 1/8;
         grid-row: 1;
     }
@@ -150,7 +157,7 @@
     }
 
     .twelve {
-        grid-column: 1/2/6;
+        grid-column: 1/2;
         grid-row: 12/13;
     }
 
@@ -166,18 +173,52 @@
 }
 
 @media screen and (max-width:$middle-screen-width) {
+
+    .information-area {
+        display: block;
+        background-color: #9fb0cf;
+        border-radius: var(--radius);
+        margin-bottom: 120px;
+        height: 400px;
+        width: 400px;
+        position: relative;
+        box-shadow: 3px 2px 5px #d3dfde;
+        animation: fadeInUp 0.9s;
+
+        p{
+            padding: 20px;
+            font-size: large;
+            font-weight: normal;
+            width: 90%;
+            color: white;
+            span{
+                color: #e5e1bb;
+                font-weight: bold;
+                font-size: larger;
+            }
+        }
+        img{
+            position: absolute;
+            right: 0;
+            bottom: -100px;
+        }
+    }
+
     .my-first-container {
         grid-template-columns: repeat(4, 100px);
-        grid-gap: 8px;
-        grid-template-rows: repeat(16, 100px);
+        grid-template-rows: repeat(14, 100px);
+
+        .bento-title {
+            display: none;
+        }
 
         .one {
             grid-column: 1/4;
-            grid-row: 2;
+            grid-row: 1;
         }
 
         .two {
-            grid-column: 5/8;
+            grid-column: 1/4;
             grid-row: 2;
         }
 
@@ -187,8 +228,8 @@
         }
 
         .four {
-            grid-column: 5/6;
-            grid-row: 3/4;
+            grid-column: 1/2;
+            grid-row: 7/8;
 
             .squar {
                 background-color: #e8e9d5;
@@ -196,8 +237,8 @@
         }
 
         .five {
-            grid-column: 7/8;
-            grid-row: 3/4;
+            grid-column: 3/4;
+            grid-row: 7/8;
 
             .squar {
                 background-color: #9fb0cf;
@@ -205,8 +246,8 @@
         }
 
         .six {
-            grid-column: 5/6;
-            grid-row: 5/6;
+            grid-column: 1/2;
+            grid-row: 9/10;
 
             .squar {
                 background-color: #d3dfde;
@@ -214,8 +255,9 @@
         }
 
         .seven {
+            //location
             grid-column: 1/4;
-            grid-row: 7/8;
+            grid-row: 13/14;
 
             .location {
                 border: 0;
@@ -225,8 +267,8 @@
         }
 
         .eight {
-            grid-column: 5/6;
-            grid-row: 7/8;
+            grid-column: 1/2;
+            grid-row: 11/12;
 
             .squar {
                 background-color: #e5e1bb;
@@ -234,8 +276,8 @@
         }
 
         .nine {
-            grid-column: 7/8;
-            grid-row: 5/8;
+            grid-column: 3/4;
+            grid-row: 9/13;
 
             .pic-vertical-rectangle {
                 background-color: #b2bd8c;
@@ -246,7 +288,87 @@
     .my-second-container {
         grid-template-columns: repeat(4, 100px);
         grid-gap: 8px;
-        grid-template-rows: repeat(16, 100px);
+        grid-template-rows: repeat(25, 100px);
+
+        .bento-title {
+            //bento title
+            grid-column: 1/4;
+            grid-row: 1;
+        }
+
+        .two {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        .three {
+            grid-column: 3/4;
+            grid-row: 2/5;
+        }
+
+        .four {
+            grid-column: 1/4;
+            grid-row: 8/11;
+        }
+
+        .five {
+            grid-column: 1/2;
+            grid-row: 4/7;
+        }
+
+        .six {
+            //he
+            grid-column: 1/4; //列
+            grid-row: 16/19;
+        }
+
+        .seven {
+            //a line
+            grid-column: 3/4;
+            grid-row: 14/15;
+        }
+
+        .eight {
+            //nana
+            grid-column: 3/4;
+            grid-row: 6/7;
+        }
+
+        .nine {
+            //hub
+            grid-column: 1/4;
+            grid-row: 12/13;
+        }
+
+        .ten {
+            //street
+            grid-column: 3/4;
+            grid-row: 24/25;
+        }
+
+        .eleven {
+            //sea
+            grid-column: 1/2;
+            grid-row: 22/25;
+        }
+
+        .twelve {
+            //snow
+            grid-column: 1/2;
+            grid-row: 14/15;
+        }
+
+        .thirteen {
+            //tree
+            grid-column: 1/4;
+            grid-row: 20/21;
+        }
+
+        .fourteen {
+            //fish
+            grid-column: 3/4;
+            grid-row: 22/23;
+        }
     }
 
 }

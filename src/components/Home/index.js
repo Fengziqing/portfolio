@@ -21,6 +21,7 @@ import tokyoTower from '../../assets/tokyoTower.jpg';
 import snow from '../../assets/snow.jpg';
 import sea from '../../assets/sea.jpg';
 import street from '../../assets/street.jpg';
+import illustration from '../../assets/3d-avatar.png';
 
 const Home = () => {
     function handleClick(link){
@@ -29,8 +30,16 @@ const Home = () => {
     }
     return (
         <>
+            <div className="information-area">
+                <p> <span>Hello!</span> I am <span>Ziqing Feng</span> (Haruko Feng)!
+                    <br/>I am a passionate <span>Software Engineer</span> with a <span>Master's degree in Computer Science</span>.
+                    <br/>I am <span>currently living in China</span>. 
+                    <br/>Regarding my language proficiency, I can speak <span>Chinese</span>, <span>Japanese</span>, 
+                     and <span>English</span>.</p>
+                <img src={illustration} alt="illution"></img>
+            </div>
             <div className="my-first-container">
-                <p className="bento-title">Hello! I am Ziqing Feng, Here are some infromation about me 😀🌍🎉!</p>
+                <p className="bento-title">Hello! I am Ziqing Feng (Haruko Feng), Here are some infromation about me 😀🌍!</p>
                 <div className="one">
                     <div className="link" onClick={()=>{handleClick("https://www.linkedin.com/in/ziqing-feng")}}>
                         <img src={menu_linkedin} alt="linkedin-icon" />
@@ -100,9 +109,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="my-second-container">
-                <div className="one">
-                    <p className="bento-title">I love taking pictures with my friends~ 📷🍃</p>
-                </div>
+                <p className="bento-title">I love taking pictures with my friends~ 📷🍃</p>
                 <div className="two">
                     <div className="squar">
                         <img src={xx2} alt="" />
