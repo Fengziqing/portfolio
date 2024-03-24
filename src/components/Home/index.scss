@@ -175,36 +175,56 @@
 @media screen and (max-width:$middle-screen-width) {
 
     .information-area {
-        display: block;
-        background-color: #9fb0cf;
-        border-radius: var(--radius);
-        margin-bottom: 120px;
-        height: 400px;
-        width: 400px;
+        display: flex;
+        // background-color: #F1E0CE;
+        margin-bottom: 130px;
+        height: 320px;
+        width: 100%;
         position: relative;
-        box-shadow: 3px 2px 5px #d3dfde;
-        animation: fadeInUp 0.9s;
+        justify-content: center;
+
+        .dot{
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            top: -300px;
+            left: -200px;
+            background-color: #b2bd8c;
+            border-radius: 50%; /* 使元素变成圆形 */
+            overflow: hidden; /* 隐藏超出边界的内容 */
+            filter: blur(80px); /* 应用模糊效果 */
+            z-index: -1;
+        }
 
         p{
-            padding: 20px;
             font-size: large;
             font-weight: normal;
+            border-radius: var(--radius);
             width: 90%;
-            color: white;
+            color: #665048;
+            animation: fadeInUp 0.9s;
+            // backdrop-filter: blur(10px);
+            // border: 2px solid rgba(255, 255, 255, 0.5);
+
             span{
-                color: #e5e1bb;
-                font-weight: bold;
+                padding: 5px;
+                color: #f2ca48;
+                text-shadow: 1px 2px 1px #4c484f;
+                // background-color: #A2C5C9;
+                font-weight: bolder;
                 font-size: larger;
             }
         }
         img{
             position: absolute;
+            bottom: -120px;
             right: 0;
-            bottom: -100px;
+            animation: fadeInUp 0.9s;
         }
     }
 
     .my-first-container {
+        justify-content: center;
         grid-template-columns: repeat(4, 100px);
         grid-template-rows: repeat(14, 100px);
 
@@ -286,8 +306,8 @@
     }
 
     .my-second-container {
+        justify-content: center;
         grid-template-columns: repeat(4, 100px);
-        grid-gap: 8px;
         grid-template-rows: repeat(25, 100px);
 
         .bento-title {
@@ -370,5 +390,26 @@
             grid-row: 22/23;
         }
     }
+}
 
+@media screen and (max-width: $phone-screen-width) {
+    .information-area{
+        .dot{
+            width: 600px;
+            height: 600px;
+        }
+        img{
+            width: 250px;
+            height: auto;
+        }
+    }
+
+
+    .my-first-container {
+        grid-gap: 1px;
+    }
+
+    .my-second-container{
+        grid-gap: 1px;
+    }
 }

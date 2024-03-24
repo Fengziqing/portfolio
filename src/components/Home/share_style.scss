@@ -1,3 +1,4 @@
+@import '../../App.scss';
 :root {
     --link-height: 70px;
     --large-heigh: 400px;
@@ -198,4 +199,14 @@
         background-color: #F3F8FF;
         box-shadow: inset 0 0 0 0.1px white;
     }
+}
+
+@media screen and (max-width:$phone-screen-width) {
+    :root{
+        --large-heigh: 380px;
+        --large-width: 380px;
+        --small-heigh: 180px;
+        --small-width: 180px;
+    }
+    
 }

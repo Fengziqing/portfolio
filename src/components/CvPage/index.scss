@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 .animate__fadeInUp {
     overflow: hidden;
 }
@@ -180,6 +182,59 @@
     }
 }
 
-@media screen and (max-width:1230px){
+@media screen and (min-width:$middle-screen-width) and (max-width: $big-screen-width) {
+    .ocha {
+        margin-left: 50px;
+    }
 
+}
+
+@media screen and (max-width:$middle-screen-width) {
+    .cv {
+        .ocha {
+            display: block;
+            animation: fadeInUp 0.8s;
+            margin: 0;
+            margin-left: auto;
+            margin-right: auto;
+
+            .school-name {
+                // display: none;
+                position:static;
+                display: flex;
+                justify-content: center;
+                width: 95%;
+                height: 50px;
+
+                p {
+                    font-size: larger;
+                    font-style: normal;
+                    text-align: left;
+                    // width: 200px;
+                    font-weight: bold;
+                    span{
+                        display: none;
+                    }
+                }
+
+                .spot {
+                    display: none;
+                }
+            }
+
+            .development-language {
+            }
+
+            .ul-normal {
+                width: 90%;
+                justify-content: center;
+
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: $phone-screen-width) {
+    
 }

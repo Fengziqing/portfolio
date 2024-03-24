@@ -115,13 +115,12 @@
         padding: 10px;
         width: 810px;
         height: 50px;
-        justify-content: left;
+        justify-content: space-evenly;
         z-index: 9999;
 
         nav{
             background:none;
             box-shadow: none;
-            width: 70%;
             right: 0px;
             align-items: center;
             justify-content: space-evenly;
@@ -162,9 +161,10 @@
 
 }
 
-@media screen and (max-width: $middle-screen-width) {
+@media screen and (max-width: $middle-screen-width) and (min-width: $phone-screen-width){//H
     .personal-message-container{
         width: 90%;
+        justify-content: space-evenly;
 
         .biglogo{
             display: none;
@@ -176,7 +176,33 @@
         }
 
         nav{
-            width: 85%;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@media screen and (max-width: $phone-screen-width){
+    .personal-message-container{
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        border-radius: 0;
+        justify-content: space-evenly;
+        
+
+        .biglogo{
+            display: none;
+        }
+        
+        .smalllogo{
+            display: flex;
+            margin-left: 20px;
+        }
+        nav{
+            justify-content: space-evenly;
+            a{
+                margin: 10px;
+            }
         }
     }
 }
