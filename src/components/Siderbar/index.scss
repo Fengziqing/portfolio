@@ -188,7 +188,6 @@
         margin: 0;
         border-radius: 0;
         justify-content: space-evenly;
-        
 
         .biglogo{
             display: none;
@@ -205,4 +204,21 @@
             }
         }
     }
+}
+
+@media screen and (max-width: $small-screen-width) {
+    .personal-message-container{
+        .smalllogo{
+            display: flex;
+            margin-left: 10px;
+        }
+        nav{
+            justify-content: space-evenly;
+            a{
+                font-size: 10px;
+                margin: 3px;
+            }
+        }
+    }
+    
 }

@@ -189,7 +189,7 @@
             height: 700px;
             top: -300px;
             left: -200px;
-            background-color: #b2bd8c;
+            background-color: #9fb0cf;
             border-radius: 50%; /* 使元素变成圆形 */
             overflow: hidden; /* 隐藏超出边界的内容 */
             filter: blur(80px); /* 应用模糊效果 */
@@ -404,12 +404,36 @@
         }
     }
 
-
     .my-first-container {
         grid-gap: 1px;
     }
 
     .my-second-container{
+        grid-gap: 1px;
+    }
+}
+
+@media screen and (max-width:$small-screen-width) {
+    .information-area{
+        margin-bottom: 0;
+        p{
+            font-size: small;
+        }
+        img{
+            width: 200px;
+            height: auto;
+            bottom: 0;
+        }
+    }
+    .my-first-container {
+        grid-template-columns: repeat(4, 80px);
+        grid-template-rows: repeat(14, 80px);
+        grid-gap: 1px;
+    }
+
+    .my-second-container{
+        grid-template-columns: repeat(4, 80px);
+        grid-template-rows: repeat(25, 80px);
         grid-gap: 1px;
     }
 }

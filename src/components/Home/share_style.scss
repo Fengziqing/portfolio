@@ -210,3 +210,12 @@
     }
     
 }
+
+@media screen and (max-width:$small-screen-width) {
+    :root{
+        --large-heigh: 300px;
+        --large-width: 300px;
+        --small-heigh: 130px;
+        --small-width: 130px;
+    }
+}
