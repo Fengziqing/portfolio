@@ -20,7 +20,7 @@ const Cv = () => {
     return (
         <>
             <div className="cv">
-                <div className="download-cv">➡️ ➡️ ➡️ <button onClick={downloadCV}> Download CV</button> ⬅️ ⬅️ ⬅️</div>
+                <div className="download-cv"><span>➡️ ➡️ ➡️ </span><button onClick={downloadCV}> Download CV</button><span> ⬅️ ⬅️ ⬅️</span></div>
                 <div className="seperater">Skills</div>
                 <div className="ocha">
                     <div className="school-name">

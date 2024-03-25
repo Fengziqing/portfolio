@@ -26,20 +26,31 @@
         
         .container{
             margin: 0;
-            padding-top: 100px;
-            overflow: hidden;
+            padding-top: 50px;
         }
     }
 }
 
- @media screen and (max-width: $phone-screen-width) {//phone size
+ @media screen and (max-width: $phone-screen-width) and (min-width:$small-screen-width){//phone size
     .base{
         justify-content: center;
         
         .container{
-            margin: 0;
-            padding-top: 100px;
             overflow: hidden;
+            margin: 0;
+            padding-top: 50px;
+        }
+    }
+ }
+
+ @media screen and (max-width:$small-screen-width) {
+    .base{
+        justify-content: center;
+        
+        .container{
+            overflow: hidden;
+            margin: 0;
+            padding-top: 50px;
         }
     }
  }

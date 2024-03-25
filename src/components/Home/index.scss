@@ -175,6 +175,7 @@
 @media screen and (max-width:$middle-screen-width) {
 
     .information-area {
+        margin-top: 20px;
         display: flex;
         // background-color: #F1E0CE;
         margin-bottom: 130px;
@@ -394,6 +395,7 @@
 
 @media screen and (max-width: $phone-screen-width) {
     .information-area{
+        margin-top: 20px;
         .dot{
             width: 600px;
             height: 600px;
@@ -415,6 +417,7 @@
 
 @media screen and (max-width:$small-screen-width) {
     .information-area{
+        margin-top: 20px;
         margin-bottom: 0;
         p{
             font-size: small;
