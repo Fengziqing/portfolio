@@ -1,4 +1,5 @@
 @import '../../App.scss';
+
 :root {
     --link-height: 70px;
     --large-heigh: 400px;
@@ -202,20 +203,44 @@
 }
 
 @media screen and (max-width:$phone-screen-width) {
-    :root{
+    :root {
         --large-heigh: 380px;
         --large-width: 380px;
         --small-heigh: 180px;
         --small-width: 180px;
     }
-    
+
 }
 
 @media screen and (max-width:$small-screen-width) {
-    :root{
+    :root {
         --large-heigh: 300px;
         --large-width: 300px;
-        --small-heigh: 130px;
-        --small-width: 130px;
+        --small-heigh: 140px;
+        --small-width: 140px;
     }
+    .bento-title {
+        padding: 10px;
+        font-size: medium;
+    }
+
+    .squar {
+        p {
+            padding: 0;
+            font-size: small;
+        }
+    }
+
+    .pic-vertical-rectangle {
+        .img-background-color {
+            height: 110px;
+        }
+
+        p {
+            font-size: small;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+
 }
