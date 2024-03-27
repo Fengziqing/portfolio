@@ -58,13 +58,13 @@ const Contact = () => {
         const data = JSON.stringify(formData);
         axios.defaults.withCredentials = true;
         try {
-            const response = await axios.post('http://localhost:3000/api/contact', data, {
+            await axios.post('http://localhost:3000/api/contact', data, {
                 headers: {
                     'Content-Type': 'application/json',
                 }
             }).then(response => {
                 setSendOk(true);
-            })
+            });
         } catch (error) {
             setSendFailed(true);
             console.log(error);
