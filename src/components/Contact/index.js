@@ -28,8 +28,7 @@ const Contact = () => {
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
-    function handleSend(e) {
-        e.preventDefault();
+    const handleSend = async () => {
         console.log(formData);
         if (!formData.name) {
             setName_error_visiable(true);
@@ -58,20 +57,19 @@ const Contact = () => {
         setWaiting(true);
         const data = JSON.stringify(formData);
         axios.defaults.withCredentials = true;
-        axios.post('https://vercel-express-eosin.vercel.app/api/contact', data, {
-            // axios.post('http://localhost:3001/api/contact', data, {
-            headers: {
-                'Content-Type': 'application/json',
-            }
-        }
-        ).then(response => {
-            setSendOk(true);
-            //clean input 
-            //add blur
-        }).catch(error => {
-            setSendFailed(true)
+        try {
+            const response = await axios.post('http://localhost:3000/api/contact', data, {
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            });
+            response.then(response => {
+                setSendOk(true);
+            })
+        } catch (error) {
+            setSendFailed(true);
             console.log(error);
-        });
+        }
         setSendButton('Send');
         setWaiting(false)
         setNeedBlur(false);
@@ -96,7 +94,7 @@ const Contact = () => {
                     <p className='title'>Message *</p>
                     <textarea type="text" name='message' minLength="1" maxLength="500" placeholder="Type here..." onChange={handleChange}></textarea>
                     {message_error_visible && <p className="message-error">Are you sure you don't wanna say anything🥺🥺🥺</p>}
-                    <button className="submit-button" onClick={handleSend}>{sendButton}</button>
+                    <button className="submit-button" onClick={()=>{handleSend()}}>{sendButton}</button>
                 </div>
                 {waiting && <Waiting />}
                 {sendOk && <SendEmailSucceed closeWindow={colsePopUpWindow} />}
