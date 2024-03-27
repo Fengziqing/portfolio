@@ -62,8 +62,7 @@ const Contact = () => {
                 headers: {
                     'Content-Type': 'application/json',
                 }
-            });
-            response.then(response => {
+            }).then(response => {
                 setSendOk(true);
             })
         } catch (error) {
