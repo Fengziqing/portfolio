@@ -1,4 +1,5 @@
 @import '../../App.scss';
+
 .contact {
     // margin-left: calc(40%);
     // width: 75%;
@@ -40,15 +41,17 @@
             color: #45496a;
         }
 
-        .name-error{
+        .name-error {
             color: #991b27;
             text-align: left;
         }
-        .email-error{
+
+        .email-error {
             color: #991b27;
             text-align: left;
         }
-        .message-error{
+
+        .message-error {
             color: #991b27;
             text-align: left;
         }
@@ -117,31 +120,53 @@
         }
     }
 }
+
 @media screen and (max-width:$middle-screen-width) {
-    .contact{
+    .contact {
         margin-top: 30px;
-        .contact-description{
+
+        .contact-description {
             font-size: larger;
             padding-top: 0;
             margin: 0;
         }
-        .contact-block{
+
+        .contact-block {
             width: 300px;
-            height: 500px;
             padding: 20px;
-            .title{
+            font-size: small;
+
+            .title {
                 font-size: small;
                 margin: 10px;
             }
-            input{
+
+            input {
                 width: 250px;
             }
-            textarea{
-                font-size: small;
+
+            input {
+                font-size: medium;
+            }
+
+            textarea {
+                font-size: medium;
                 width: 250px;
-                height: 180px;
+                height: 150px;
+            }
+
+            .name-error {
+                margin: 2px 10px;
+            }
+
+            .email-error {
+                margin: 2px 10px;
+            }
+
+            .message-error {
+                margin: 2px 10px;
             }
         }
     }
-    
+
 }

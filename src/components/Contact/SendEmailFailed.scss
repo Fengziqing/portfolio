@@ -1,3 +1,4 @@
+@import '../../App.scss';
 :root{
     --failed-color: #B63231;
     --failed-shadow: #E1B1AB;
@@ -62,6 +63,36 @@
             color: black;
             opacity: 0.9;
             box-shadow: 1px 2px 0 0 darkgrey;
+        }
+    }
+}
+
+
+@media screen and (max-width:$middle-screen-width) {
+    .pop-up-window{
+        width: 200px;
+        padding: 20px;
+
+        img {
+            background-color: none;
+            width: 100px;
+            height: 100px;
+            bottom: 0;
+            margin-top: -50px;
+        }
+
+        p {
+            margin-top: 0;
+            font-size: smaller;
+            color: #FDF4F3;
+            font-weight: normal;
+        }
+
+        button {
+            font-size: small;
+            width: 80px;
+            height: 30px;
+            margin-top: 10px;
         }
     }
 }

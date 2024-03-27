@@ -1,3 +1,4 @@
+@import '../../App.scss';
 :root {
     --successed-color: #B6C796;
     --successed-shadow: #45958E;
@@ -62,4 +63,34 @@
             box-shadow: 1px 2px 0 0 darkgrey;
         }
     }
+}
+
+@media screen and (max-width:$middle-screen-width) {
+    .pop-up-window-OK {
+        height: 130px;
+        padding: 30px;
+
+        img {
+            background-color: none;
+            width: 100px;
+            height: 100px;
+            bottom: 0;
+            margin-top: -50px;
+        }
+
+        p {
+            margin-top: 0;
+            font-size: small;
+            color: #FDF4F3;
+            font-weight: bold;
+        }
+
+        button {
+            font-size: small;
+            width: 80px;
+            height: 30px;
+            margin-top: 10px;
+        }
+    }
+
 }
