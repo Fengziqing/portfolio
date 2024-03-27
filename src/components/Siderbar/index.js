@@ -3,20 +3,27 @@ import avatar from '../../assets/avatar.png';
 import email_icon from '../../assets/email.svg';
 import linkedin_icon from '../../assets/linkedin.svg';
 import github_icon from '../../assets/github.svg';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import biglogo from '../../assets/biglogo.png';
 import smalllogo from '../../assets/smalllogo.png';
 
 const Sidebar = () => {
+
+    const navigate = useNavigate();
+
     function handleClick(link) {
         const newpage = window.open('about:blank');
         newpage.location.href = link;
     }
 
+    function backToHome(){
+        navigate('/');
+    }
+
     return (
         <div className="personal-message-container">
-            <img className="biglogo" src={biglogo} alt='haruko'></img>
-            <img className="smalllogo" src={smalllogo} alt='small-H'></img>
+            <img className="biglogo" src={biglogo} alt='haruko' onClick={backToHome}></img>
+            <img className="smalllogo" src={smalllogo} alt='small-H' onClick={backToHome}></img>
             <nav>
                 <NavLink
                     exact="true"
@@ -29,8 +36,8 @@ const Sidebar = () => {
                     activeclassname="active"
                     to="/contact">Contact Me</NavLink>
             </nav>
-            <img className="avatar" src={avatar} alt="avatar" />
-            <h1 className="my-name">Haruko Feng<span>ZiQing Feng(27)</span></h1>
+            <img className="avatar" src={avatar} alt="avatar" onClick={backToHome}/>
+            <h1 className="my-name" onClick={backToHome}>Haruko Feng<span>ZiQing Feng(27)</span></h1>
             <ul>
                 <li>Software Engineer, Client Engineer</li>
                 <li>Computer Science Master</li>

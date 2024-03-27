@@ -134,17 +134,27 @@
         }
 
         .my-name{
+            cursor: pointer;
             display: none;
+            &:hover{
+                opacity: 80%;
+            }
         }
 
         .biglogo{
+            cursor: pointer;
             display:flex;
             margin-left: 20px;
+            &:hover{
+                opacity: 80%;
+            }
         }
         .smalllogo{
+            cursor: pointer;
             display: none;
         }
         .avatar{
+            cursor: pointer;
             display: none;
         }
 
