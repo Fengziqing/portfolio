@@ -1,14 +1,14 @@
-<div style="text-align:center; display:block;">
+<div style="text-align:center">
     <img src="./src/assets/biglogo.png" style="width:150px">
     <h1>Haruko Portfoilo</h1>
 </div>
-<div style="text-align:center;">
-    <img src="../frontend/src/assets/avatar.png" style="width:100px; jus">
+<div style="text-align:center">
+    <img src="../frontend/src/assets/avatar.png" style="width:100px">
     <p style="font-size:medium;font-weight:bold">Hello! Welcome to Haruko Feng(ZiQing Feng)'s portfoilo website!<br/> This is the front-end source code.</p>
 </div>
 
 ## About This Website
-My website address: [Haruko Portfoilo](https://ziqingfeng.vercel.app/ "haruko portfoilo")
+### My website address: [Haruko Portfoilo](https://ziqingfeng.vercel.app/ "haruko portfoilo")
 
 **If you access this website from China, you will be blocked, please use VPN. 🪜*
 
