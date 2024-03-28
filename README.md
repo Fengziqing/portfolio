@@ -1,8 +1,8 @@
-<div style="text-align:center">
+<div align="center">
     <img src="./src/assets/biglogo.png" style="width:150px">
     <h1>Haruko Portfoilo</h1>
 </div>
-<div style="text-align:center">
+<div align="center">
     <img src="./src/assets/avatar.png" style="width:100px">
     <p style="font-size:medium;font-weight:bold">Hello! Welcome to Haruko Feng(ZiQing Feng)'s portfoilo website!<br/> This is the front-end source code.</p>
 </div>
