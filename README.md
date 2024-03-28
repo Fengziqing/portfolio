@@ -3,7 +3,7 @@
     <h1>Haruko Portfoilo</h1>
 </div>
 <div style="text-align:center">
-    <img src="../frontend/src/assets/avatar.png" style="width:100px">
+    <img src="./src/assets/avatar.png" style="width:100px">
     <p style="font-size:medium;font-weight:bold">Hello! Welcome to Haruko Feng(ZiQing Feng)'s portfoilo website!<br/> This is the front-end source code.</p>
 </div>
 
