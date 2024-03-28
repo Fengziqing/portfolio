@@ -1,3 +1,36 @@
+<div style="text-align:center; display:block;">
+    <img src="./src/assets/biglogo.png" style="width:150px">
+    <h1>Haruko Portfoilo</h1>
+</div>
+<div style="text-align:center;">
+    <img src="../frontend/src/assets/avatar.png" style="width:100px; jus">
+    <p style="font-size:medium;font-weight:bold">Hello! Welcome to Haruko Feng(ZiQing Feng)'s portfoilo website!<br/> This is the front-end source code.</p>
+</div>
+
+## About This Website
+My website address: [Haruko Portfoilo](https://ziqingfeng.vercel.app/ "haruko portfoilo")
+
+**If you access this website from China, you will be blocked, please use VPN. 🪜*
+
+**If you want use this source code, please note my name and this github address on your project.*
+
+####
+
+## How does it looks like
+MacBook Pro(Home Page)  | iPhone(Contact Me Page)
+------------- | -------------
+![alt](./readme-assets/macbookpro-harukoweb.png)  | ![alt](./readme-assets/iphone-harukoweb.png)
+
+iPad Pro(Home Page)  | iPad Mini(CV Page)
+------------- | -------------
+![alt](./readme-assets/ipadpro-harukoweb.png)  | ![alt](./readme-assets/ipadmini-harukoweb.png)
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
