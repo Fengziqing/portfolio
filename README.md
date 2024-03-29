@@ -2,10 +2,12 @@
     <img src="./src/assets/biglogo.png" style="width:150px">
     <h1>Haruko Portfoilo</h1>
 </div>
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <div align="center">
     <img src="./src/assets/avatar.png" style="width:100px">
-    <p style="font-size:medium;font-weight:bold">Hello! Welcome to Haruko Feng(ZiQing Feng)'s portfoilo website!<br/> This is the front-end source code.</p>
+    <h4 >Hello! Welcome to Haruko Feng(ZiQing Feng)'s portfoilo website!<br/> This is the front-end source code.</h4>
 </div>
+![Static Badge](https://img.shields.io/badge/http%3A%2F%2Fwww.linkedin.com%2Fin%2Fziqing-feng?style=flat&color=green)
 
 ## About This Website
 ### My website address: [Haruko Portfoilo](https://ziqingfeng.vercel.app/ "haruko portfoilo")
@@ -13,10 +15,14 @@
 **If you access this website from China, you will be blocked, please use VPN. 🪜*
 
 **If you want use this source code, please note my name and this github address on your project.*
+### Backend github: [Haruko Portfoilo-Backend](https://github.com/Fengziqing/vercel-express.git/ "haruko portfoilo-backend")
 
 ####
 
-## How does it looks like
+## How does it looks like?
+### Responsive Web Design：
+![alt](./readme-assets/response-harukoweb.gif)
+
 MacBook Pro(Home Page)  | iPhone(Contact Me Page)
 ------------- | -------------
 ![alt](./readme-assets/macbookpro-harukoweb.png)  | ![alt](./readme-assets/iphone-harukoweb.png)
@@ -28,10 +34,7 @@ iPad Pro(Home Page)  | iPad Mini(CV Page)
 
 
 
-
-
-
-# Getting Started with Create React App
+# How to start?
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -101,3 +104,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Reference
+## Design
+#### [Color Palette](https://palettemaker.com/app)
+#### [Logo](https://iconscout.com)
+#### [Picture](https://www.manypixels.co/gallery)
+#### [3d illustration](https://icons8.com/illustrations)
+## Deployment platform
+#### [vercel](https://vercel.com)
