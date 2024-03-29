@@ -27,7 +27,7 @@
 ## How does it looks like?
 ### Responsive Web Design：
 
-![alt](./readme-assets/response-harukoweb.gif)
+![alt](./readme-assets/response-haruko.gif)
 
 MacBook Pro(Home Page)  | iPhone(Contact Me Page)
 ------------- | -------------
