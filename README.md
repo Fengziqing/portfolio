@@ -2,12 +2,17 @@
     <img src="./src/assets/biglogo.png" style="width:150px">
     <h1>Haruko Portfoilo</h1>
 </div>
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
 <div align="center">
     <img src="./src/assets/avatar.png" style="width:100px">
     <h4 >Hello! Welcome to Haruko Feng(ZiQing Feng)'s portfoilo website!<br/> This is the front-end source code.</h4>
 </div>
-![Static Badge](https://img.shields.io/badge/http%3A%2F%2Fwww.linkedin.com%2Fin%2Fziqing-feng?style=flat&color=green)
+
+![Static Badge](https://img.shields.io/badge/Github-ZiQing-blue?style=for-the-badge&logo=Linkedin&link=https%3A%2F%2Fgithub.com%2FFengziqing)
+![Static Badge](https://img.shields.io/badge/Github-ZiQing-yellow?style=for-the-badge&logo=GitHub&link=https%3A%2F%2Fgithub.com%2FFengziqing)
+![Static Badge](https://img.shields.io/badge/Portfoilo-Haruko-purple?style=for-the-badge&link=https%3A%2F%2Fziqingfeng.vercel.app%2F)
+
+
 
 ## About This Website
 ### My website address: [Haruko Portfoilo](https://ziqingfeng.vercel.app/ "haruko portfoilo")
@@ -21,6 +26,7 @@
 
 ## How does it looks like?
 ### Responsive Web Design：
+
 ![alt](./readme-assets/response-harukoweb.gif)
 
 MacBook Pro(Home Page)  | iPhone(Contact Me Page)
@@ -113,3 +119,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 #### [3d illustration](https://icons8.com/illustrations)
 ## Deployment platform
 #### [vercel](https://vercel.com)
+## Tools
+#### [Convert To GIF](https://cloudconvert.com/)
+#### [readme(markdown) badge](https://shields.io/badges)
