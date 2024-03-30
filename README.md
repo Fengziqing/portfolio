@@ -21,12 +21,12 @@
 </p>
 
 
-
-
 ## About This Website
 ### My website address: [Haruko Portfoilo](https://ziqingfeng.vercel.app/ "haruko portfoilo")
 
 **If you access this website from China, you will be blocked, please use VPN. 🪜*
+
+**如果你在中国境内访问这个网站，你会被墙，请使用VPN🪜访问。*
 
 **If you want use this source code, please note my name and this github address on your project.*
 ### Backend github: [Haruko Portfoilo-Backend](https://github.com/Fengziqing/vercel-express.git/ "haruko portfoilo-backend")
@@ -36,7 +36,7 @@
 ## How does it looks like?
 ### Responsive Web Design：
 
-![alt](./readme-assets/response-harukoweb.gif)
+![alt](./readme-assets/response-haruko.gif)
 
 MacBook Pro(Home Page)  | iPhone(Contact Me Page)
 ------------- | -------------
@@ -46,8 +46,11 @@ iPad Pro(Home Page)  | iPad Mini(CV Page)
 ------------- | -------------
 ![alt](./readme-assets/ipadpro-harukoweb.png)  | ![alt](./readme-assets/ipadmini-harukoweb.png)
 
+### Contact Me Page
+![alt](./readme-assets/backend.gif)
 
-
+#### You will receive a email looks like this
+![alt](./readme-assets/confirmation-email.jpg)
 
 # How to start?
 
@@ -56,7 +59,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
-
+¸
 ### `npm start`
 
 Runs the app in the development mode.\
