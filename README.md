@@ -8,10 +8,11 @@
     <h4 >Hello! Welcome to Haruko Feng(ZiQing Feng)'s portfoilo website!<br/> This is the front-end source code.</h4>
 </div>
 
-<object>![Static Badge](https://img.shields.io/badge/Github-ZiQing-blue?style=for-the-badge&logo=Linkedin&link=https%3A%2F%2Fgithub.com%2FFengziqing)</object>
-
-![Static Badge](https://img.shields.io/badge/Github-ZiQing-yellow?style=for-the-badge&logo=GitHub&link=https%3A%2F%2Fgithub.com%2FFengziqing)
-![Static Badge](https://img.shields.io/badge/Portfoilo-Haruko-purple?style=for-the-badge&cacheSeconds=https%3A%2F%2Fziqingfeng.vercel.app%2F)
+<p align="center">
+<a herf="https://github.com/Fengziqing"><img src="https://img.shields.io/badge/Github-ZiQing-yellow?style=for-the-badge&logo=Github"></img></a>
+<a href="http://www.linkedin.com/in/ziqing-feng"><img src="https://img.shields.io/badge/Linkedin-ZiQing-blue?style=for-the-badge&logo=Linkedin"></img></a>
+<a href="https://ziqingfeng.vercel.app/"><img src="https://img.shields.io/badge/Portfoilo-Haruko-purple?style=for-the-badge"></img></a>
+</p>
 
 
 
@@ -29,7 +30,7 @@
 ## How does it looks like?
 ### Responsive Web Design：
 
-![alt](./readme-assets/response-haruko.gif)
+![alt](./readme-assets/response-harukoweb.gif)
 
 MacBook Pro(Home Page)  | iPhone(Contact Me Page)
 ------------- | -------------
