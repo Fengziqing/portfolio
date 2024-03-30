@@ -49,8 +49,8 @@ iPad Pro(Home Page)  | iPad Mini(CV Page)
 ### Contact Me Page
 ![alt](./readme-assets/backend.gif)
 
-#### You will receive a email looks like this
-![alt](./readme-assets/confirmation-email.jpg)
+#### You will receive a email looks like this:
+<img src="./readme-assets/confirmation-email.jpg" width="300px"/>
 
 # How to start?
 
