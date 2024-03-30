@@ -8,9 +8,11 @@
     <h4 >Hello! Welcome to Haruko Feng(ZiQing Feng)'s portfoilo website!<br/> This is the front-end source code.</h4>
 </div>
 
-![Static Badge](https://img.shields.io/badge/Github-ZiQing-blue?style=for-the-badge&logo=Linkedin&link=https%3A%2F%2Fgithub.com%2FFengziqing)
+<object>![Static Badge](https://img.shields.io/badge/Github-ZiQing-blue?style=for-the-badge&logo=Linkedin&link=https%3A%2F%2Fgithub.com%2FFengziqing)</object>
+
 ![Static Badge](https://img.shields.io/badge/Github-ZiQing-yellow?style=for-the-badge&logo=GitHub&link=https%3A%2F%2Fgithub.com%2FFengziqing)
-![Static Badge](https://img.shields.io/badge/Portfoilo-Haruko-purple?style=for-the-badge&link=https%3A%2F%2Fziqingfeng.vercel.app%2F)
+![Static Badge](https://img.shields.io/badge/Portfoilo-Haruko-purple?style=for-the-badge&cacheSeconds=https%3A%2F%2Fziqingfeng.vercel.app%2F)
+
 
 
 
