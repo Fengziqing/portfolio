@@ -11,7 +11,7 @@ function App() {
     <>
     <Routes>
       <Route path='/' element={<Layout/>}>
-         {/* index表示初始page标记吗？ */}
+         {/* index表示初始page标记吗 */}
         <Route index element={<Home />}></Route>
         <Route path='cv' element={<Cv />}></Route>
         <Route path='contact' element={<Contact />}></Route>
