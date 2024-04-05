@@ -57,15 +57,22 @@
         cursor: pointer;
         text-decoration: underline;
         font-weight: bolder;
-
-        img {
-            height: 15px;
-            width: auto;
-        }
+        position: relative;
+        margin-right: 18px;
 
         &:hover {
             color: darkblue;
         }
+    }
+
+    .name-explanation::after{
+        content: '';
+        height: 16px;
+        width: 16px;
+        position: absolute;
+        bottom: 1px;
+        background-image: url('../../assets/link.svg');
+        background-size: cover; 
     }
 
     .ocha {
@@ -170,6 +177,15 @@
                 margin-right:0;
                 margin-bottom: 20px;
                 transition: padding 0.5s;
+
+                .skill{
+                    color:#589da4
+                }
+
+                .language{
+                    color: orange;
+                    font-weight: bold;
+                }
 
                 &:hover {
                     color: black;

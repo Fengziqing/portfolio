@@ -1,6 +1,5 @@
 import './index.scss';
 import spot from '../../assets/spot.svg';
-import link from '../../assets/link.svg';
 
 const Cv = () => {
     function handleClick(link){
@@ -73,14 +72,13 @@ const Cv = () => {
                 <div className="ocha">
                     <div className="school-name">
                         <p>Client Engineer<br /> <span className="name-explanation"
-                            onClick={()=>handleClick("https://zoom.us/")}>ZOOM <img
-                                src={link} alt="" /></span> <br /><span> HangZhou, China <br />2022 - 2023</span></p>
+                            onClick={()=>handleClick("https://zoom.us/")}>ZOOM</span> <br /><span> HangZhou, China <br />2022 - 2023</span></p>
                         <img className="spot" src={spot} alt="spot" />
                     </div>
                     <ul className="ul-normal">
                         <li>Led the development of <span className="name-explanation"
                             onClick={()=>handleClick("https://github.com/Fengziqing/languageTest")}>validation
-                            scripts(<span className="language">Python</span>) <img src={link} alt="" /></span> for ZOOM Mac
+                            scripts(<span className="language">Python</span>) </span>for ZOOM Mac
                             client in all 16 languages,
                             covering the entire process from <span className="skill">requirements analysis to script
                                 development, testing, and automation</span>.
@@ -110,25 +108,24 @@ const Cv = () => {
                 <div className="ocha">
                     <div className="school-name">
                         <p>Master degree <br /> <span className="name-explanation"
-                            onClick={()=>handleClick("https://www.ocha.ac.jp/index.html")}>Ochanomizu University <img
-                                src={link} alt="" /></span> <br /><span>Tokyo, Japa</span> <br /> <span>2020 - 2022</span>
+                            onClick={()=>handleClick("https://www.ocha.ac.jp/index.html")}>Ochanomizu University</span> <br /><span>Tokyo, Japa</span> <br /> <span>2020 - 2022</span>
                         </p><img className="spot" src={spot} alt="spot" />
                     </div>
                     <ul className="ul-normal">
                         <li>Computer Science Master degree in <span className="name-explanation"
                             onClick={()=>handleClick("http://is.ocha.ac.jp/~siio/")}>Human-Computer Interaction, Siio Lab
-                            <img src={link} alt="" /></span></li>
+                             </span></li>
                         <li><span className="name-explanation"
                             onClick={()=>handleClick("https://www.ipsj.or.jp/award/taikaigakusei.html")}>Student
-                            Encouragement Award <img src={link} alt="" /></span>, The 84th National Convention of the
+                            Encouragement Award  </span>, The 84th National Convention of the
                             Information Processing Society of Japan(IPSJ), 2022
                             <br />ZIQING FENG, Mana SASAGAWA, Itiro SIIO, Yasushi MATOBA, “<span className="name-explanation"
                                 href="http://is.ocha.ac.jp/~siio/projects/papers/ipsj2022/7Y-03.pdf">control by using
-                                half-reflective AR mirror display <img src={link} alt="" /></span>“
+                                half-reflective AR mirror display  </span>“
                         </li>
                         <li><span className="name-explanation"
                             onClick={()=>handleClick("https://www.jlpt.jp/e/about/levelsummary.html")}>Language
-                            Proficiency N1 <img src={link} alt="" /></span> : The highest-level certificate of Japanese
+                            Proficiency N1  </span> : The highest-level certificate of Japanese
                             proficiency (24.1% Pass Rate)</li>
                     </ul>
                 </div>
