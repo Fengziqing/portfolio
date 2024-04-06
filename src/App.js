@@ -15,6 +15,7 @@ function App() {
         <Route index element={<Home />}></Route>
         <Route path='cv' element={<Cv />}></Route>
         <Route path='contact' element={<Contact />}></Route>
+        <Route path='my practice' element={<MyPractice />}></Route>
         <Route path='*' element={<NoPage />}></Route>
       </Route>
     </Routes>
