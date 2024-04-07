@@ -1,0 +1,30 @@
+.demo {
+    display: block;
+
+    .my-first-container {
+        padding: 0px;
+        display: grid;
+        grid-template-columns: repeat(8, 100px);
+        grid-gap: 8px;
+        grid-template-rows: repeat(8, 100px);
+        animation: fadeInUp 0.5s;
+
+        .bento-title {
+            grid-column: 1/8;
+            grid-row: 1;
+        }
+    
+        .one {
+            grid-column: 1/4;
+            grid-row: 2;
+            .img-background-color{
+                background-color: antiquewhite;
+            }
+            img{
+                background-position: center;
+                background-size: cover;
+                background-image: url('https://ziqingfeng.vercel.app/');
+            }
+        }
+    }
+}

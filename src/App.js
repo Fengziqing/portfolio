@@ -5,6 +5,8 @@ import Home from './components/Home';
 import Cv from './components/CvPage';
 import Contact from './components/Contact';
 import NoPage from './components/NoPage';
+import Demo from './components/Demo';
+import ToDoList from './components/Demo/ToDoList';
 
 function App() {
   return (
@@ -15,7 +17,8 @@ function App() {
         <Route index element={<Home />}></Route>
         <Route path='cv' element={<Cv />}></Route>
         <Route path='contact' element={<Contact />}></Route>
-        {/* <Route path='my practice' element={<MyPractice />}></Route> */}
+        <Route path='Demo' element={<Demo />}></Route>
+        <Route path='Demo/TodoList' element={<ToDoList />}></Route>
         <Route path='*' element={<NoPage />}></Route>
       </Route>
     </Routes>

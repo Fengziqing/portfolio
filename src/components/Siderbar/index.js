@@ -16,7 +16,7 @@ const Sidebar = () => {
         newpage.location.href = link;
     }
 
-    function backToHome(){
+    function backToHome() {
         navigate('/');
     }
 
@@ -27,16 +27,15 @@ const Sidebar = () => {
             <nav>
                 <NavLink
                     exact="true"
-                    activeclassname="active"
                     to="/">Home</NavLink>
                 <NavLink
-                    activeclassname="active"
                     to="/cv">CV</NavLink>
                 <NavLink
-                    activeclassname="active"
+                    to="/demo">Demo</NavLink>
+                <NavLink
                     to="/contact">Contact Me</NavLink>
             </nav>
-            <img className="avatar" src={avatar} alt="avatar" onClick={backToHome}/>
+            <img className="avatar" src={avatar} alt="avatar" onClick={backToHome} />
             <h1 className="my-name" onClick={backToHome}>Haruko Feng<span>ZiQing Feng(27)</span></h1>
             <ul>
                 <li>Software Engineer, Client Engineer</li>
