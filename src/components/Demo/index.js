@@ -1,5 +1,6 @@
 import './index.scss';
-import '../Home/share_style.scss';
+import BentoTitle from '../BentoComponents/BentoTitle';
+import ClickHorizontalRectangle from '../BentoComponents/ClickHorizontalRectangle';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -11,14 +12,10 @@ const Demo = () => {
     }
     return (
         <div className="demo">
-            <div className="my-first-container">
-                <div className="bento-title">React Practice Demo</div>
+            <div className="react-task">
+                <BentoTitle content='React Practice Demo' />
                 <div className="one"onClick={()=>handleClick('ToDoList')}>
-                    <div className="squar">
-                        <div className='img-background-color'></div>
-                        {/* <img alt='todolist'/> */}
-                        <p>Todo-List</p>
-                    </div>
+                    <ClickHorizontalRectangle imgalt='todo-list' title='Todo-List'/>
                 </div>
             </div>
         </div>

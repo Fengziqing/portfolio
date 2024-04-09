@@ -87,7 +87,7 @@
         grid-column: 7/8;
         grid-row: 5/8;
 
-        .pic-vertical-rectangle {
+        .vertical-rectangle {
             background-color: #b2bd8c;
         }
     }
@@ -251,28 +251,16 @@
         .four {
             grid-column: 1/2;
             grid-row: 7/8;
-
-            .squar {
-                background-color: #e8e9d5;
-            }
         }
 
         .five {
             grid-column: 3/4;
             grid-row: 7/8;
-
-            .squar {
-                background-color: #9fb0cf;
-            }
         }
 
         .six {
             grid-column: 1/2;
             grid-row: 9/10;
-
-            .squar {
-                background-color: #d3dfde;
-            }
         }
 
         .seven {
@@ -290,19 +278,11 @@
         .eight {
             grid-column: 1/2;
             grid-row: 11/12;
-
-            .squar {
-                background-color: #e5e1bb;
-            }
         }
 
         .nine {
             grid-column: 3/4;
             grid-row: 9/13;
-
-            .pic-vertical-rectangle {
-                background-color: #b2bd8c;
-            }
         }
     }
 

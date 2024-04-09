@@ -1,0 +1,42 @@
+@import './root_style.scss';
+
+.click-horizontal-rectangle {
+    margin: var(--margin);
+    padding: 5px;
+    width: var(--large-width);
+    height: var(--small-heigh);
+    background: #9fb0cf;
+    border-radius: var(--radius);
+    border-style: none;
+    overflow: hidden;
+    display: flex;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+    box-shadow: 2px 3px 2px #665048;
+
+    img {
+        object-fit: cover;
+        background-color: #665048;
+        border-radius: var(--radius);
+        width: 50%;
+    }
+
+    .task-description {
+        display: block;
+        margin-left: 10px;
+
+        p {
+            font-weight: bold;
+            font-size: large;
+            text-align: center;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &:hover {
+        opacity: 90%;
+        box-shadow: 1px 1px 0 #665048;
+    }
+}

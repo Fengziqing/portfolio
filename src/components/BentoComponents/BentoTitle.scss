@@ -1,0 +1,17 @@
+@import '../../App.scss';
+
+.bento-title {
+    padding: 30px;
+    width: 100%;
+    font-weight: bold;
+    font-size: large;
+    color: black;
+    text-align: left;
+    padding-left: 20px;
+}
+@media screen and (max-width:$small-screen-width) {
+    .bento-title {
+        padding: 10px;
+        font-size: medium;
+    }
+}

@@ -1,0 +1,30 @@
+@import '../../App.scss';
+
+:root {
+    --link-height: 70px;
+    --large-heigh: 400px;
+    --large-width: 400px;
+    --small-heigh: 180px;
+    --small-width: 180px;
+    --margin: 5px;
+    --radius: 28px;
+    --shadow: 3px 5px 10px lightgray;
+}
+
+@media screen and (max-width:$phone-screen-width) {
+    :root {
+        --large-heigh: 380px;
+        --large-width: 380px;
+        --small-heigh: 180px;
+        --small-width: 180px;
+    }
+}
+
+@media screen and (max-width:$small-screen-width) {
+    :root {
+        --large-heigh: 300px;
+        --large-width: 300px;
+        --small-heigh: 140px;
+        --small-width: 140px;
+    }
+}

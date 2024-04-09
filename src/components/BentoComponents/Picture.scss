@@ -1,0 +1,18 @@
+@import './root_style.scss';
+
+.picture {
+    margin: var(--margin);
+    width: var(--large-width);
+    height: var(--large-heigh);
+    // color: #565656;
+    border-radius: var(--radius);
+    // border-style: solid;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+}

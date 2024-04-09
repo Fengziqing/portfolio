@@ -1,0 +1,56 @@
+@import './root_style.scss';
+@import '../../App.scss';
+
+.squar {
+    margin: var(--margin);
+    width: var(--small-width);
+    height: var(--small-heigh);
+    border-radius: var(--radius);
+    // border-style: solid;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    display: block;
+    position: relative;
+
+    .img-background-color {
+        position: absolute;
+        z-index: 1;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 38px;
+        border-radius: var(--radius);
+        background-color: #f9f4ed;
+        opacity: 50%;
+    }
+
+    img {
+        position: relative;
+        z-index: 2;
+        object-fit: cover;
+        height: auto;
+        width: 100%;
+    }
+
+    p {
+        position: relative;
+        z-index: 1;
+        color: #565656;
+        height: 40px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 5px;
+        text-shadow: 2px 1px 0 #d3dfde;
+    }
+}
+
+@media screen and (max-width:$small-screen-width) {
+    .squar {
+        p {
+            padding: 0;
+            font-size: small;
+        }
+    }
+}

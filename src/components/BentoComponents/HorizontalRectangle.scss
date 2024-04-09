@@ -1,0 +1,16 @@
+@import './root_style.scss';
+
+.horizontal-rectangle {
+    margin: var(--margin);
+    width: var(--large-width);
+    height: var(--small-heigh);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,59 @@
+@import './root_style.scss';
+@import '../../App.scss';
+
+.vertical-rectangle {
+    margin: var(--margin);
+    width: var(--small-width);
+    height: var(--large-heigh);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    position: relative;
+
+    .img-background-color {
+        position: absolute;
+        z-index: 0;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        height: 140px;
+        border-radius: var(--radius);
+        background-color: #f9f4ed;
+        opacity: 50%;
+    }
+
+    img {
+        position: relative;
+        height: auto;
+        width: 100%;
+        z-index: 1;
+    }
+
+    p {
+        z-index: 1;
+        position: relative;
+        border-radius: var(--radius);
+        color: #565656;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 25px;
+        text-shadow: 2px 1px 0 #d3dfde;
+    }
+}
+
+@media screen and (max-width:$small-screen-width) {
+    .vertical-rectangle {
+        .img-background-color {
+            height: 110px;
+        }
+
+        p {
+            font-size: small;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+
+}
