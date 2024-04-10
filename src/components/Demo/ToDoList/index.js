@@ -43,11 +43,18 @@ const ToDoList = () => {
 
     }
     function saveChange(targetId) {
+        if (editValue.length === 0) {
+            setWrongMessage('task name cannot be null');
+            setTimeout(() => {
+                setWrongMessage('');
+            }, 5000);
+            return;
+        }
         const newTask = task.map(item => item.id === targetId ? { ...item, name: editValue, isDone:false, isEditing:false } : item);
         setTask(newTask);
     }
     function cancelChange(targetId){
-        setTask(task.map(item=> item.id===targetId ? {...item,isEditing:false}:item));
+        setTask(task.map(item=> item.id===targetId ? {...item,isEditing:false} : item));
     }
 
     return (
@@ -67,7 +74,7 @@ const ToDoList = () => {
                                     ?
                                     <>
                                         <input className='edit-area' type='text' value={editValue} onChange={handleEditValue}></input>
-                                        <button onClick={cancelChange}>Cancel</button>
+                                        <button onClick={()=>cancelChange(item.id)}>Cancel</button>
                                         <button onClick={()=>saveChange(item.id)}>Save</button>
                                     </>
                                     :
