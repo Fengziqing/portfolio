@@ -15,9 +15,9 @@ const Contact = () => {
     const [sendOk, setSendOk] = useState(false);
     const [sendFailed, setSendFailed] = useState(false);
     const [sendButton, setSendButton] = useState('Send');
-    const [name_error_visible, setName_error_visiable] = useState(false);
-    const [email_error_visible, setEmail_error_visible] = useState(false);
-    const [message_error_visible, setMessage_error_visible] = useState(false);
+    const [emailErrorText, setEmailErrorText] = useState('');
+    const [nameErrorText,setNameErrorText] = useState('');
+    const [messageErrorText,setMessageErrorText] = useState('');
 
     function colsePopUpWindow() {
         setSendFailed(false);
@@ -71,25 +71,37 @@ const Contact = () => {
     function handleSend (e) {
         e.preventDefault();
         //data checking
-        if (name === '') {
-            setName_error_visiable(true);
+        if (name.length === 0) {
+            setNameErrorText('At least, let me know your name 🥺🙏');
             setTimeout(() => {
-                setName_error_visiable(false);
+                setNameErrorText('');
+            }, 5000);
+            return;
+        }else if(name.length>30){
+            setNameErrorText('Your Name should shorter than 30 letters ✍️');
+            setTimeout(() => {
+                setNameErrorText('');
             }, 5000);
             return;
         }
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
-            setEmail_error_visible(true);
+            setEmailErrorText('Please enter a valid email address 🥺🥺🥺');
             setTimeout(() => {
-                setEmail_error_visible(false);
+                setEmailErrorText('');
             }, 5000);
             return;
         }
-        if (message==='') {
-            setMessage_error_visible(true);
+        if (message.length===0) {
+            setMessageErrorText('Are you sure you don\'t wanna say anything🥺🥺🥺');
             setTimeout(() => {
-                setMessage_error_visible(false);
+                setMessageErrorText('');
+            }, 5000);
+            return;
+        }else if(message.length>5){
+            setMessageErrorText('Your message is too long ❌ , should shorter than 500 letters ✅');
+            setTimeout(() => {
+                setMessageErrorText('');
             }, 5000);
             return;
         }
@@ -108,14 +120,14 @@ const Contact = () => {
                     {needBlur && <Blur />}
                     <form onSubmit={handleSend}>
                     <p className='title'>Name *</p>
-                    <input type="text" name='name' minLength="1" maxLength="20" value={name} onChange={handleNameChange}></input>
-                    {name_error_visible && <p className="name-error">At least, let me know your name 🥺🙏</p>}
+                    <input type="text" name='name'value={name} onChange={handleNameChange}></input>
+                    <p className="name-error">{nameErrorText}</p>
                     <p className='title'>Email Address *</p>
-                    <input type="email" name='email' maxLength="50" value={email} onChange={handleEmailChange}></input>
-                    {email_error_visible && <p className="email-error">Correct email is necessary 🙋</p>}
+                    <input type="email" name='email'value={email} onChange={handleEmailChange}></input>
+                    <p className="email-error">{emailErrorText}</p>
                     <p className='title'>Message *</p>
-                    <textarea type="text" name='message' minLength="1" value={message} maxLength="500" placeholder="Type here..." onChange={handleMessageChange}></textarea>
-                    {message_error_visible && <p className="message-error">Are you sure you don't wanna say anything🥺🥺🥺</p>}
+                    <textarea type="text" name='message' value={message} placeholder="Type here..." onChange={handleMessageChange}></textarea>
+                    <p className="message-error">{messageErrorText}</p>
                     <button className="submit-button">{sendButton}</button>
                     </form>
                 </div>
