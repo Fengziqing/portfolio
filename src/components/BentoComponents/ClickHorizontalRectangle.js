@@ -1,11 +1,12 @@
 import './ClickHorizontalRectangle.scss';
 
 export default function ClickHorizontalRectangle(props){
+    const {imgsrc,imgalt,title} = props
     return (
         <div className="click-horizontal-rectangle">
-            <img src={props.imgsrc} alt={props.imgalt}/>
+            <img src={imgsrc} alt={imgalt}/>
             <div className='task-description'>
-            <p>{props.title}</p>
+            <p>{title}</p>
             <div className='description'>React - useState Hook, HTML, CSS, Responsible Web Development</div>
             </div>
         </div>
