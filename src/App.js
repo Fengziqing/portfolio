@@ -6,7 +6,7 @@ import Cv from './components/CvPage';
 import Contact from './components/Contact';
 import NoPage from './components/NoPage';
 import Demo from './components/Demo';
-import ToDoList from './components/Demo/ToDoList';
+import DemoPage from './components/Demo/demoPage';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Route path='cv' element={<Cv />}></Route>
         <Route path='contact' element={<Contact />}></Route>
         <Route path='Demo' element={<Demo />}></Route>
-        <Route path='Demo/TodoList' element={<ToDoList />}></Route>
+        <Route path='Demo/DemoPage/:demoName' element={<DemoPage />}></Route>
         <Route path='*' element={<NoPage />}></Route>
       </Route>
     </Routes>

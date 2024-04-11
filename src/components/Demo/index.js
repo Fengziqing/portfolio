@@ -8,14 +8,14 @@ const Demo = () => {
     const navigator = useNavigate();
 
     function handleClick(page) {
-        navigator(`/Demo/${page}`)
+        navigator(`/Demo/DemoPage/${page}`)
     }
     return (
         <div className="demo">
             <div className="react-task">
                 <BentoTitle content='React Practice Demo' />
-                <div className="one"onClick={()=>handleClick('ToDoList')}>
-                    <ClickHorizontalRectangle imgsrc='http://localhost:3000/demo' imgalt='todo-list' title='Todo-List'/>
+                <div className="one" onClick={()=>handleClick('ToDoList')}>
+                    <ClickHorizontalRectangle imgsrc='' imgalt='ToDoList' title='Todo-List'/>
                 </div>
             </div>
         </div>
