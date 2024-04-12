@@ -15,7 +15,7 @@ const Demo = () => {
             <div className="react-task">
                 <BentoTitle content='React Practice Demo' />
                 <div className="one" onClick={()=>handleClick('ToDoList')}>
-                    <ClickHorizontalRectangle imgsrc='' imgalt='ToDoList' title='Todo-List'/>
+                    <ClickHorizontalRectangle imgsrc='ToDoList' imgalt='ToDoList' title='Todo-List'/>
                 </div>
             </div>
         </div>
