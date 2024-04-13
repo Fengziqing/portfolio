@@ -6,7 +6,6 @@
     padding: 50px 10px;
     align-items: center;
     justify-content: center;
-
     .input-area {
         display: flex;
         align-items: center;
@@ -36,6 +35,11 @@
         margin: 0 10px;
         padding: 0;
         color: #bf5c45;
+    }
+    .notice{
+        font-size: small;
+        font-style: italic;
+        opacity: 50%;
     }
 
     ul {

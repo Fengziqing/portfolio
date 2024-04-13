@@ -5,7 +5,6 @@
     margin: var(--margin);
     width: var(--large-width);
     height: var(--small-heigh);
-    background: #9fb0cf;
     border-radius: var(--radius);
     border-style: none;
     overflow: hidden;
@@ -13,26 +12,27 @@
     cursor: pointer;
     text-align: center;
     transition: background-color 0.3s;
-    box-shadow: 2px 2px 10px #665048;
 
     img {
         object-fit: cover;
+        border-style: solid;
+        border-color: darkgrey;
+        margin: 10px;
+        border-radius: var(--radius);
         width: calc(var(--large-width)/2);
     }
 
     .task-description {
         display: block;
-        margin: 10px;
+        text-align: left;
+        // margin: 10px;
 
         p {
             font-weight: bold;
             font-size: larger;
-            text-align: center;
-            text-align: center;
         }
         .description{
-            text-align: left;
-            width: auto;
+            font-size: medium;
         }
     }
     
@@ -44,19 +44,14 @@
     }
 }
 
-@media screen and (max-width: $middle-screen-width){
+@media screen and (max-width: $small-screen-width){
     .click-horizontal-rectangle{
         .task-description {
-            margin: 5px;
-    
             p {
-                font-weight: bold;
                 font-size: medium;
             }
             .description{
                 font-size: small;
-                text-align: left;
-                width: auto;
             }
         }
     }

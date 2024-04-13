@@ -9,13 +9,15 @@ export default function DemoPage() {
     let component;
     if(demoName === 'ToDoList'){
         component = <ToDoList />;
+    }else{
+        component = <div className='developing'>Comming soon!</div>
     }
     function backToDemo() {
         navigator('/Demo');
     }
     return (
             <div className='demoPage'>
-                <button className="back" onClick={backToDemo}> Back to Demo page</button>
+                <button className='back' onClick={backToDemo}> Back to Demo page</button>
                 <div className='demoContent'>
                     {component}
                 </div>

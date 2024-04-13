@@ -1,14 +1,19 @@
 .demoPage {
-    padding-top: 30px;
     display: block;
+    margin-top: 40px;
+    .developing{
+        text-align: center;
+        font-size: larger;
+        font-weight: bolder;
+    } 
 
     .back {
-        font-size: medium;
+        font-size: larger;
         font-weight: bold;
         background: transparent;
         border: none;
         padding: 1em 1.5em;
-        color: black;
+        color: #315098;
         position: relative;
         transition: 0.5s ease;
         cursor: pointer;
@@ -53,6 +58,7 @@
 
     .demoContent{
         margin: 10px;
+        justify-content: center;
     }
 
 }

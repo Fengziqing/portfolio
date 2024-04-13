@@ -65,6 +65,7 @@ const ToDoList = () => {
             </div>
             <p className='wrong-message'>{wrongMessage}</p>
             <h2>To Do List</h2>
+            <p className='notice'>*Please notice that this To-Do List will not save any data from you.*</p>    
             <ul>
                 {
                     task.map(item => {
