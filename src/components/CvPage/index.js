@@ -40,11 +40,14 @@ const Cv = () => {
                     <ul className="development-language">
                         <li className="language-label">React</li>
                         <li className="language-label">Javascript</li>
+                        <li className="language-label">Typescript</li>
                         <li className="language-label">Python</li>
                         <li className="language-label">HTML</li>
                         <li className="language-label">CSS</li>
+                        <li className="language-label">Tailwindcss</li>
                         <li className="language-label">Objectice-C</li>
                         <li className="language-label">Node.js</li>
+                        <li className="language-label">Next.js</li>
                         <li className="language-label">Express.js</li>
                         <li className="language-label">C++</li>
                         <li className="language-label">C</li>
@@ -54,6 +57,7 @@ const Cv = () => {
                         <li className="apps">mongoose</li>
                         <li className="database">MongoDB</li>
                         <li className="platform">Heroku</li>
+                        <li className="platform">Vercel</li>
                         <li className="others">Unit Testing</li>
                         <li className="others">Jest</li>
                         <li className="others">CI/CD</li>
