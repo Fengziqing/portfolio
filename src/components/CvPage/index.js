@@ -2,6 +2,14 @@ import './index.scss';
 import spot from '../../assets/spot.svg';
 
 const Cv = () => {
+    const language = ['React','Javascrip','Typescript','Python','HTML',
+    'CSS','Tailwindcss','Objectice-C','Node.js','Next.js','Express.js','C++','C'];
+    const tools=['Git'];
+    const apps =['Jekins','Figma','mongoose'];
+    const database = ['MongoDB'];
+    const platform = ['Heroku','Vercel'];
+    const others = ['Unit Testing','Jest','CI/CD'];
+
     function handleClick(link){
         const newpage = window.open('about:blank');
         newpage.location.href = link;
@@ -38,29 +46,12 @@ const Cv = () => {
                         <img className="spot" src={spot} alt="spot" />
                     </div>
                     <ul className="development-language">
-                        <li className="language-label">React</li>
-                        <li className="language-label">Javascript</li>
-                        <li className="language-label">Typescript</li>
-                        <li className="language-label">Python</li>
-                        <li className="language-label">HTML</li>
-                        <li className="language-label">CSS</li>
-                        <li className="language-label">Tailwindcss</li>
-                        <li className="language-label">Objectice-C</li>
-                        <li className="language-label">Node.js</li>
-                        <li className="language-label">Next.js</li>
-                        <li className="language-label">Express.js</li>
-                        <li className="language-label">C++</li>
-                        <li className="language-label">C</li>
-                        <li className="tools">Git</li>
-                        <li className="apps">Jekins</li>
-                        <li className="apps">Figma</li>
-                        <li className="apps">mongoose</li>
-                        <li className="database">MongoDB</li>
-                        <li className="platform">Heroku</li>
-                        <li className="platform">Vercel</li>
-                        <li className="others">Unit Testing</li>
-                        <li className="others">Jest</li>
-                        <li className="others">CI/CD</li>
+                        {language.map(item => <li className="language-label">{item}</li>)}
+                        {tools.map(item => <li className="tools">{item}</li>)}
+                        {apps.map(item => <li className="apps">{item}</li>)}
+                        {database.map(item => <li className="database">{item}</li>)}
+                        {platform.map(item => <li className="platform">{item}</li>)}
+                        {others.map(item => <li className="others">{item}</li>)}
                     </ul>
                 </div>
                 <div className="seperater">Work Experience </div>
