@@ -3,7 +3,7 @@ import './VerticalRectangle.scss';
 export default function VerticalRectangle(props) {
     const { imgsrc, imgalt } = props;
 
-    if (props.alt === '') {
+    if (imgalt === '') {
         return (
             <div className="vertical-rectangle">
                 <img src={imgsrc} alt='Aphoto'/>
