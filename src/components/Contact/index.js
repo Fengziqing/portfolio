@@ -98,7 +98,7 @@ const Contact = () => {
                 setMessageErrorText('');
             }, 5000);
             return;
-        }else if(message.length>5){
+        }else if(message.length>500){
             setMessageErrorText('Your message is too long ❌ , should shorter than 500 letters ✅');
             setTimeout(() => {
                 setMessageErrorText('');
