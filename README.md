@@ -1,6 +1,6 @@
 <div align="center">
     <img src="./src/assets/biglogo.png" style="width:150px">
-    <h1>Haruko Portfoilo</h1>
+    <h1>Haruko Portfoilo-v1</h1>
 </div>
 
 <div align="center">
@@ -22,7 +22,7 @@
 
 
 ## About This Website
-### My website address: [Haruko Portfoilo](https://ziqingfeng-v1.vercel.app/ "haruko portfoilo")
+### My website address: [Haruko Portfoilo-v1](https://ziqingfeng-v1.vercel.app/ "haruko portfoilo")
 
 **If you access this website from China, you will be blocked, please use VPN. 🪜*
 
