@@ -5,7 +5,7 @@
 
 <div align="center">
     <img src="./src/assets/avatar.png" style="width:100px">
-    <h4 >Hello! Welcome to Haruko Feng(ZiQing Feng)'s portfoilo website!<br/> This is the front-end source code.</h4>
+    <h4 >Hello! Welcome to Haruko Feng(ZiQing Feng)-v1's portfoilo website!<br/> This is the front-end source code.</h4>
 </div>
 
 <p align="center">
@@ -15,14 +15,14 @@
     <a href="http://www.linkedin.com/in/ziqing-feng" alt="ziqing-linkedin">
         <img src="https://img.shields.io/badge/Linkedin-ZiQing-blue?style=for-the-badge&logo=Linkedin" />
     </a>
-    <a href="https://ziqingfeng.vercel.app/" alt="haruko portfoilo web address">
+    <a href="https://ziqingfeng-v1.vercel.app/" alt="haruko portfoilo web address">
         <img src="https://img.shields.io/badge/Portfoilo-Haruko-purple?style=for-the-badge" />
     </a>
 </p>
 
 
 ## About This Website
-### My website address: [Haruko Portfoilo](https://ziqingfeng.vercel.app/ "haruko portfoilo")
+### My website address: [Haruko Portfoilo](https://ziqingfeng-v1.vercel.app/ "haruko portfoilo")
 
 **If you access this website from China, you will be blocked, please use VPN. 🪜*
 
